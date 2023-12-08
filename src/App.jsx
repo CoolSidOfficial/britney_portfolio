@@ -1,6 +1,19 @@
+import Navbar from "./components/navbar"
 const App = () => {
   return (
-    <div className="p-5">App</div>
+    <>
+    <Navbar/>
+    {/* <ul>
+      <li><img src="" alt="" /></li>
+      <li><img src="" alt="" /></li>
+      <li><img src="" alt="" /></li>
+      <li><img src="" alt="" /></li>
+      <li><img src="" alt="" /></li>
+      
+
+    </ul> */}
+    <a className="fixed  bottom-[50%]  right-1" href="mailto:cooltech@protonmail.com">cooltech@protonmail.com</a>
+    </>
   )
 }
 
