@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar"
 import Header from "./components/Header"
 import Aboutme from "./components/Aboutme"
-import G_logo from "./assets/github-mark.svg"
-import L_logo from "./assets/linkedin.svg"
+import Experience from "./components/Experience"
+import { Contact } from "./components/Contact"
 const App = () => {
   return (
     <>
@@ -21,6 +21,7 @@ const App = () => {
       <span className="fixed bottom-[1%] right-[56px] h-[26%] bg-gray-400 w-1"></span>
       <Header uname="Siddhant Jain" title="I built things for the &nbsp;&nbsp;&nbsp;&nbsp; web" description={["I 'm a full-stack web developer with a passion ",<br/>," for creating dynamic and interactive web applications.",<br/>,"I have experience in both front-end and back-end technologies",<br/>,"and I m always eager to learn and implement new skills" ] } />
       <Aboutme/>
+      <Contact/>
     </> 
   )
 
