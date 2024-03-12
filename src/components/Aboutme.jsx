@@ -2,8 +2,8 @@ import Image from "../assets/sid.jpg"
 const Aboutme = () => {
   return (
     <>
-        <span className="text-[#8892B0]   text-5xl m-12 font-bold">01.</span>
-        <span className=" text-5xl text-[#8892B0]  font-bold  "> About Me&nbsp; </span>
+        <span className="text-[#C1CAEB]   text-5xl m-12 font-bold">01.</span>
+        <span className=" text-5xl text-[#C1CAEB]  font-bold  "> About Me&nbsp; </span>
       <span className=" absolute   rotate-90	  left-[600px] top-[97%] h-[58%] bg-gray-400 w-[0.5px]"></span>
 
           <div className=" flex m-20 text-white">

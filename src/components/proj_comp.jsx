@@ -1,6 +1,6 @@
 import React from 'react'
 
-const proj_comp = (props) => {
+const Proj_comp = (props) => {
   return (
     <div>
         <span>Featured Project</span>
@@ -18,4 +18,4 @@ const proj_comp = (props) => {
   )
 }
 
-export default proj_comp
+export default Proj_comp
