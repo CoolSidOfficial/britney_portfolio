@@ -4,7 +4,7 @@ const Experience = () => {
    const[experience,setExperience]=useState(1)
   return (
     <>
-    <div className='font-bold text-[#CCD6F6] text-5xl m-12'>
+    <div  id ="experience"className='font-bold text-[#CCD6F6] text-5xl m-12'>
         <span>
             02.
         </span>

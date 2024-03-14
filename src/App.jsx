@@ -3,6 +3,8 @@ import Header from "./components/Header"
 import Aboutme from "./components/Aboutme"
 import Experience from "./components/Experience"
 import { Contact } from "./components/Contact"
+import Projects from "./components/Projects"
+import Other_Proj from "./components/Other_Proj"
 const App = () => {
   return (
     <>
@@ -22,7 +24,11 @@ const App = () => {
       <Header uname="Siddhant Jain" title="I built things for the &nbsp;&nbsp;&nbsp;&nbsp; web" description={["I 'm a full-stack web developer with a passion ",<br/>," for creating dynamic and interactive web applications.",<br/>,"I have experience in both front-end and back-end technologies",<br/>,"and I m always eager to learn and implement new skills" ] } />
       <Aboutme/>
       <Experience/>
+      <Projects/>
+      <Other_Proj/>
       <Contact/>
+
+
     </> 
   )
 
