@@ -3,15 +3,15 @@ import React from 'react'
 const Other_comp = () => {
   return (
     <>
-    <div className='bg-[#112240] w-[350px] rounded  h-[380px]  p-5 '>
+    <div className='bg-[#112240] w-[350px] rounded  h-[380px]  p-5  transition-transform transform hover:-translate-y-4 '>
 
        <div className="flex  space-x-52">
 
-        <img className="w-14" src="folder.png "></img>
-          <a href="">  <img className="w-10 h-7 m-" src="link.png "></img></a>
+        <img className="w-14" src="sj.svg "></img>
+          <a href="">  <img className="w-10 h-7 text-white" src="icons8-external-link.svg "></img></a>
        </div>
 
-        <span className=" text-[#CCD6F6] p-1 font-semibold text-xl">Integrating Algolia Search<br/> with WordPress Multisite</span>
+        <span className=" text-[#CCD6F6] p-2 font-semibold text-xl">Integrating Algolia Search<br/> with WordPress Multisite</span>
         <p className='p-2 text-[#A1ACCB] font-semibold'>Building  a custom multisite <br/>compaitable Wordpress Plugin <br/>  to build  global search with Algoia </p>
        
        <span className=" text-[#354462] hover:text-white">Algoria</span>
