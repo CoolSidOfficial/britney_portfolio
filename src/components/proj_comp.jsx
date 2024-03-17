@@ -3,7 +3,7 @@ import React from 'react'
 const Proj_Comp= (props) => {
   return (
     <div className='m-20'> 
-    <a  href="" >< img src="demo_project.png" alt="random" className="  w-[600px] h-[300px] rounded-lg inline-block mt-11  ml-32  z-0 " /></a>
+    <a   href="" >< img src="demo_project.png" alt="random" className="  w-[600px] h-[300px] rounded-lg inline-block mt-11  brightness-50	  transition duration-300  ease-in-out  hover:brightness-100  ml-32  z-0 " /></a>
     <div  dir={props.side} className=" relative z-1  mr-[8px]  -mt-[280px] p-2 ">
       <span className="text-white p-2 block ">Featured Project</span>
       <a  className="text-[#CCD6F6] text-2xl font-semibold" href="https://github.com" >{props.title}</a>
