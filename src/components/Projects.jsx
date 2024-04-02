@@ -1,5 +1,5 @@
 import React from 'react'
-import Proj_Comp from './Proj_comp'
+import Proj_Comp from './proj_comp'
 
 const Projects = () => {
   return (
