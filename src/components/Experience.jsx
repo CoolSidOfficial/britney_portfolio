@@ -1,17 +1,19 @@
 import React,{useState} from 'react'
 import Exp_comp from './exp_comp'
+import {useRef,useEffect} from 'react'
 const Experience = () => {
    const[experience,setExperience]=useState(1)
+
   return (
     <>
-    <div  id ="experience"className='font-bold text-[#CCD6F6] text-5xl m-12'>
+    <div  id ="experience" className='font-bold text-[#CCD6F6] text-4xl m-12 ms-[4rem]'>
         <span>
             02.
         </span>
         <span>Where I’ve Worked</span>
 
     </div>
-      <span className=" absolute   rotate-90	  left-[55%] top-[1332px] h-[58%] bg-gray-400 w-[0.5px]"></span>
+      <span className=" absolute   rotate-90	  left-[48%] top-[1315px] h-[58%] bg-gray-400 w-[0.5px]"></span>
     <div className='flex m-28'>
     <span className=" absolute  	  left-[8%] top-[1649px] h-[49%] w-[4px] bg-gray-400 "></span>
 

@@ -1,9 +1,11 @@
 import Image from "../assets/sid.jpg"
+import { Slide,Fade ,Bounce} from "react-awesome-reveal";
 const Aboutme = () => {
   return (
     <>
-        <span className="text-[#C1CAEB]   text-5xl m-12 font-bold">01.</span>
-        <span className=" text-5xl text-[#C1CAEB]  font-bold  "> About Me&nbsp; </span>
+    <Fade triggerOnce delay={100}>
+        <span className="text-[#C1CAEB]   text-5xl m-12 font-bold inline text-sm-14">01.About Me</span>
+        {/* <span className=" text-3xl text-[#C1CAEB]  font-bold  "> About Me&nbsp; </span> */}
       <span className=" absolute   rotate-90	  left-[600px] top-[97%] h-[58%] bg-gray-400 w-[0.5px]"></span>
 
           <div className=" flex m-20 text-white">
@@ -13,6 +15,7 @@ const Aboutme = () => {
        {/* <div className="h-[600px/] "></div> */}
 </div>
 <img  src={Image} alt= "Image can't be loaded " width={500}></img></div>
+</Fade>
 </>
   )
 }
