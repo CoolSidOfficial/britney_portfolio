@@ -8,13 +8,33 @@ const Aboutme = () => {
         {/* <span className=" text-3xl text-[#C1CAEB]  font-bold  "> About Me&nbsp; </span> */}
       <span className=" absolute   rotate-90	  left-[600px] top-[97%] h-[58%] bg-gray-400 w-[0.5px]"></span>
 
-          <div className=" flex m-20 text-white">
-        <div className= " text-[#818CA9] text-2xl flex column  ">Hello! My name is Siddhant Jain  and I enjoy creating things that live on the internet.<br/>
-       My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom<br/> reblog button taught me a lot about HTML & CSS! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></br>Quibusdam officiis molestias deserunt quos id ab dicta sequi debitis nesciunt quo.
-       Here are a few technologies I’ve been working with recently:     
+      <div className=" flex m-20 text-white">
+       <div className= " text-[#818CA9] text-xl flex column w-110 ">
+  My name is Siddhant Jain. I am a very ambitious person who enjoys learning new things and is inherently curious. 
+<br/>
+<br/>
+
+ I am passionate about understanding how things work, often dismantling items to rebuild them and uncover their inner workings. I believe in a first principle approach. My main goal is to provide value to as many people as I can, and I have found that technology is the most efficient way to achieve this.
+ <br/>
+ <br/>
+As I was growing up, my interest in computers deepened. Despite facing challenges due to the high cost of internet access in 2015, I was determined to pursue my interests. To overcome this obstacle, I began learning about wifi hacking. Gradually, my fascination with ethical hacking grew. I enjoyed watching hacking movies, and eventually, delved into the intricacies of hacking at the age of 13.
+<br/>
+<br/>
+
+After some time, I realized the importance of creating my own scripts to truly become proficient in hacking. I started with C++ and developed some impressive projects, such as Jarvis (a personal assistant). Subsequently, I dedicated myself to programming, exploring languages like PHP and others.
+<br/>
+<br/>
+During the COVID lockdown, I seized the opportunity to broaden my knowledge base. I delved into various subjects such as macroeconomics, international relations, geopolitics, history, and current affairs. Additionally, I explored medical science-related topics, particularly different types of heart surgeries. I also immersed myself in business books, often watching summaries to gain insights efficiently.
+<br/>
+<br/>
+Despite expanding my interests and becoming a pantomath, I never abandoned my first hobby, computer science. I focused on specializing in this field while maintaining a generalist approach to other subjects.
+<br/> Here are a few technologies I’ve been working with recently:     
        {/* <div className="h-[600px/] "></div> */}
 </div>
-<img  src={Image} alt= "Image can't be loaded " width={500}></img></div>
+  <div className=" w-[150rem] p-4  ">
+<img  src={Image} alt= "Image can't be loaded " ></img>
+    </div>
+  </div>
 </Fade>
 </>
   )

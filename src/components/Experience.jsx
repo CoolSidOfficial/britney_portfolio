@@ -13,9 +13,9 @@ const Experience = () => {
         <span>Where I’ve Worked</span>
 
     </div>
-      <span className=" absolute   rotate-90	  left-[48%] top-[1315px] h-[58%] bg-gray-400 w-[0.5px]"></span>
+      <span className=" absolute   rotate-90	  left-[48%] top-[1691px] h-[58%] bg-gray-400 w-[0.5px]"></span>
     <div className='flex m-28'>
-    <span className=" absolute  	  left-[8%] top-[1649px] h-[49%] w-[4px] bg-gray-400 "></span>
+    <span className=" absolute  	  left-[8%] top-[1997px] h-[49%] w-[4px] bg-gray-400 "></span>
 
       <ul className="  text-2xl text-[#8892B0] ">
         <li><button className ="experience-button hover:bg-[#112240] focus:bg-[#112240] p-4 w-52" onClick={()=>setExperience(1)}  >Upstament</button></li>
