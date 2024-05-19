@@ -6,16 +6,16 @@ const Experience = () => {
 
   return (
     <>
-    <div  id ="experience" className='font-bold text-[#CCD6F6] text-4xl m-12 ms-[4rem]'>
+    <div  id ="experience" className='  font-bold text-[#CCD6F6] text-4xl m-12 ms-[4rem]'>
         <span>
             02.
         </span>
         <span>Where I’ve Worked</span>
 
     </div>
-      <span className=" absolute   rotate-90	  left-[48%] top-[1691px] h-[58%] bg-gray-400 w-[0.5px]"></span>
-    <div className='flex m-28'>
-    <span className=" absolute  	  left-[8%] top-[1997px] h-[49%] w-[4px] bg-gray-400 "></span>
+    <div className='flex m-28 relative'>
+      <span className=" absolute   rotate-90	  left-[52%] bottom-[83%] h-[95%] bg-gray-400 w-[0.5px]"></span>
+    <span className=" absolute  	  left-[0.2%] top-[2%] h-[70%] w-[4px] bg-gray-400 "></span>
 
       <ul className="  text-2xl text-[#8892B0] ">
         <li><button className ="experience-button hover:bg-[#112240] focus:bg-[#112240] p-4 w-52" onClick={()=>setExperience(1)}  >Upstament</button></li>
