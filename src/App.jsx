@@ -22,7 +22,7 @@ const App = () => {
 
       </ul> 
       <span className="fixed bottom-[1%] left-[25px] h-[28%] bg-gray-400 w-1"></span>
-      <a className="fixed bottom-[45%] left-[87%] rotate-90 text-lg text-[#8892B0] font-bold z-100" href="mailto:cooltech@protonmail.com">cooltech@protonmail.com&nbsp;&nbsp;</a>
+      <a className="fixed bottom-[45%] left-[88%] rotate-90 text-lg text-[#8892B0] font-bold z-100" href="mailto:siddhantjainmvm@gmail.com">siddhantjainmvm@gmail.com&nbsp;&nbsp;</a>
 
       <span className="fixed bottom-[1%] right-[56px] h-[26%] bg-gray-400 w-1"></span>
       <Header uname="Siddhant Jain" title="I built things for the &nbsp;&nbsp;&nbsp;&nbsp; web" description={["I 'm a full-stack web developer with a passion ",<br/>," for creating dynamic and interactive web applications.",<br/>,"I have experience in both front-end and back-end technologies",<br/>,"and I m always eager to learn and implement new skills" ] } />

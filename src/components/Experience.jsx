@@ -18,15 +18,15 @@ const Experience = () => {
     <span className=" absolute  	  left-[0.2%] top-[2%] h-[70%] w-[4px] bg-gray-400 "></span>
 
       <ul className="  text-2xl text-[#8892B0] ">
-        <li><button className ="experience-button hover:bg-[#112240] focus:bg-[#112240] p-4 w-52" onClick={()=>setExperience(1)}  >Upstament</button></li>
-        <li><button className="experience-button  hover:bg-[#112240] p-4 w-52  focus:bg-[#112240] " onClick={()=>setExperience(2)}>Apple</button></li>
-        <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(3)}>Scout Studio</button></li>
-        <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(4)}>Starry</button></li>
-        <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(5)}>MullenLowe</button></li>
+        <li><button className ="experience-button hover:bg-[#112240] focus:bg-[#112240] p-4 w-52" onClick={()=>setExperience(1)}  >StartUp</button></li>
+        <li><button className="experience-button  hover:bg-[#112240] p-4 w-52  focus:bg-[#112240] " onClick={()=>setExperience(2)}>Aicte Idealab</button></li>
+        <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(3)}>KLIC</button></li>
+        {/* <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(4)}>Starry</button></li> */}
+        {/* <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(5)}>MullenLowe</button></li> */}
       </ul> 
         <div>
           {experience===1 &&
-           <Exp_comp title="Lead Engineer @ Upstatement" dateto="May 2018 - Present"
+           <Exp_comp title="Software Developer  @KLIC KALCHURI INCUBATION CENTER " dateto="May 24 - Present"
            first_para="Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more" 
            second_para="Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements"
            third_para="Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders"
@@ -34,18 +34,22 @@ const Experience = () => {
            "
            />}
            {experience===2 &&
-           <Exp_comp title="UI Engineer Co-op @ Apple
-           " dateto="July - December 2017"
-           first_para="Developed and styled interactive web applications for Apple Music using Ember and SCSS"
-           second_para="Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API integrations" 
-           third_para="Architected and implemented the user interface of Apple Music's embeddable web player widget for in-browser user authorization and full song playback"
-           fourth_para="Contributed extensively to the creation of MusicKit JS, a public-facing JavaScript SDK for embedding Apple Music players into web applications"
+           <Exp_comp title="Project Developer @ Aicte Idealab
+           " dateto="Sept 2023 - April 2024"
+           first_para="Developed a fully functional, responsive full-stack website using Next.js Tailwind , providing a seamless user
+experience."
+           second_para="Implemented an intuitive and efficient admin panel, with keeping Web Security(CSRF,JWT ) in mind
+,enhancing the website’s management capabilities." 
+           third_para="Utilized version control systems, such as Git, to track and manage project"
+           fourth_para="Used Mongo DB as a backend to store data on Atlas server and used Rest Api to integrate systems"
            />}
-            {experience===3 && <Exp_comp title="Developer @ Scout Studio" dateto="Spring 2016 & 2017"
-           first_para="Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community"
-         second_para="Developed and styled interactive web applications for Apple Music using Ember and SCSS"
-      third_para="Worked on the development of a new website, improving its performance and user experience"
-      fourth_para="Participated in brainstorming sessions and contributed innovative ideas for new features and improvements"
+            {experience===3 && <Exp_comp title=" Frontend Developer @ KLIC KALCHURI INCUBATION CENTER" dateto="April 2023 -Sept 2023"
+           first_para="Implemented a dashboard application using MERN stack"
+         second_para="Developed 5+ frontend websites using HTML/CSS JavaScript,React"
+      third_para=" Implemented responsive web design techniques to ensure compatibility and optimal viewing experience on
+mobile devices"
+      fourth_para="Work closely under Apeiro medica in Dare to start program and Collaborated with cross-functional teams,
+including designers and backend developers,"
         />}
           {experience===4&&<Exp_comp title="Software Engineer Co-op @ Starry
          " dateto="July - December 2016"
