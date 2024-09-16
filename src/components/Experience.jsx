@@ -31,7 +31,7 @@ const Experience = () => {
 
         <div className=' md:block'>
           {/* small devices ul starts here */}
-        <ul className='md:hidden  mb-10 text-[#8892B0] ml-7 mt-12  font-semibold  text-xl flex justify-evenly gap-12 '>
+        <ul className='md:hidden  mb-10 text-[#8892B0] ml-7 mt-12    font-semibold  text-xl flex justify-evenly gap-12 '>
     <li><button  onClick={()=>setExperience(1)}  >StartUp</button></li>
     <li><button  onClick={()=>setExperience(2)}>Aicte Idealab</button></li>
     <li><button  onClick={()=>setExperience(3)}>KLIC</button></li>

@@ -2,14 +2,14 @@ import Image from "../assets/sid.jpg"
 import { Slide,Fade ,Bounce} from "react-awesome-reveal";
 const Aboutme = () => {
   return (
-    <>
+    <div className="md:relative">
     <Fade triggerOnce delay={100}>
-      <div className="bg-[#0A192] h-56 md:hidden">
+      <div className="bg-[#0A192] h-56 md:hidden ">
   
       </div>
         <span className="text-[#C1CAEB]  text-2xl  md:text-5xl md:m-12 m-4 font-bold md:inline">01. About Me</span>
         {/* <span className=" text-3xl text-[#C1CAEB]  font-bold  "> About Me&nbsp; </span> */}
-      <span className=" md:absolute  md:rotate-90	 md:left-[600px] md:top-[97%] md:h-[58%] bg-gray-400 md:w-[0.5px]"></span>
+      <span className=" md:absolute  md:rotate-90	 md:left-[48%] md:top-[-250px] md:h-[58%] bg-gray-400 md:w-[0.5px]"></span>
 
       <div className="m-4  flex md:m-24 text-white">
        <div className= " text-[#818CA9] md:text-xl text-lg flex column w-110 ">
@@ -39,7 +39,7 @@ Despite expanding my interests and becoming a pantomath, I never abandoned my fi
     </div>
   </div>
 </Fade>
-</>
+</div>
   )
 }
 
