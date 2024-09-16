@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 const Header = (props) => {
   return (
     <Fade  delay={100}>
-  <header id="about" className="text-white md:font-bold  md:m-28 mt-64 ml-8 ">
+  <header id="about" className="text-white md:font-bold   md:m-28 mt-14 ml-8 ">
  <span className= "block text-2xl "> Hi, my name is </span>
  <span className="leading-[2] block text-4xl md:text-8xl text-[#CCD6F6]">{props.uname}.</span>
  <span className="leading-[1] block text-4xl  md:text-8xl text-[#8892B0]">{props.title}.</span>
