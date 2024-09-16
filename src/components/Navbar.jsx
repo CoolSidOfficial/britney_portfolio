@@ -3,7 +3,7 @@ import Resume from "../assets/resume.pdf"
 const Navbar = () => {
   return (
     <Fade cascade damping={1} delay={200}>
-    <nav className=" flex  justify-end  space-between  mt-2 p-5 bg-[#0A192F] text-[#ccd6f6] text-xl w-[100%] h-[60px]  ">
+    <nav className=" hidden  md:flex md:justify-end  md:space-between  md:mt-2 md:p-5 bg-[#0A192F] md:text-[#ccd6f6] md:text-xl md:w-[100%] ,md:h-[60px]  ">
         <a  className="hover:text-white p-3 " href="#about">01. About</a>
         <a className="hover:text-white p-3" href="#experience">02. Experience  </a>
         <a className="hover:text-white p-3" href="#projects">03. Work</a>

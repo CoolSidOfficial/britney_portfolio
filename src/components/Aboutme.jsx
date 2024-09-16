@@ -4,12 +4,15 @@ const Aboutme = () => {
   return (
     <>
     <Fade triggerOnce delay={100}>
-        <span className="text-[#C1CAEB]   text-5xl m-12 font-bold inline text-sm-14">01.About Me</span>
+      <div className="bg-[#0A192] h-56 md:hidden">
+  
+      </div>
+        <span className="text-[#C1CAEB]  text-2xl  md:text-5xl md:m-12 m-4 font-bold md:inline">01. About Me</span>
         {/* <span className=" text-3xl text-[#C1CAEB]  font-bold  "> About Me&nbsp; </span> */}
-      <span className=" absolute   rotate-90	  left-[600px] top-[97%] h-[58%] bg-gray-400 w-[0.5px]"></span>
+      <span className=" md:absolute  md:rotate-90	 md:left-[600px] md:top-[97%] md:h-[58%] bg-gray-400 md:w-[0.5px]"></span>
 
-      <div className=" flex m-20 text-white">
-       <div className= " text-[#818CA9] text-xl flex column w-110 ">
+      <div className="m-4  flex md:m-24 text-white">
+       <div className= " text-[#818CA9] md:text-xl text-lg flex column w-110 ">
   My name is Siddhant Jain. I am a very ambitious person who enjoys learning new things and is inherently curious. 
 <br/>
 <br/>
@@ -31,7 +34,7 @@ Despite expanding my interests and becoming a pantomath, I never abandoned my fi
 <br/> Here are a few technologies I’ve been working with recently:     
        {/* <div className="h-[600px/] "></div> */}
 </div>
-  <div className=" w-[150rem] p-4  ">
+  <div className=" hidden md:block  w-[150rem] p-4  ">
 <img  src={Image} alt= "Image can't be loaded " ></img>
     </div>
   </div>

@@ -6,25 +6,38 @@ const Experience = () => {
 
   return (
     <>
-    <div  id ="experience" className='  font-bold text-[#CCD6F6] text-4xl m-12 ms-[4rem]'>
+    <div  id ="experience" className='  font-bold text-[#CCD6F6] text-2xl  ml-3 mt-40 md:text-4xl md:m-12 ms-[4rem]'>
         <span>
             02.
         </span>
         <span>Where I’ve Worked</span>
-
+     
     </div>
-    <div className='flex m-28 relative'>
-      <span className=" absolute   rotate-90	  left-[52%] bottom-[83%] h-[95%] bg-gray-400 w-[0.5px]"></span>
-    <span className=" absolute  	  left-[0.2%] top-[2%] h-[70%] w-[4px] bg-gray-400 "></span>
+    <div className='flex md: md:m-28 md:relative'>
+      <span className="md:absolute  md:rotate-90	 md: left-[52%] md:bottom-[80%] md:h-[95%] bg-gray-400 md:w-[0.5px]"></span>
+    <span className=" md: absolute  	 md: left-[0.2%] md:top-[2%] md:h-[70%] md:w-[4px] bg-gray-400 "></span>
+      
+    
 
-      <ul className="  text-2xl text-[#8892B0] ">
+       {/* this ul is for bigger screens */}
+      <ul className="hidden  md:block text-2xl text-[#8892B0]">
         <li><button className ="experience-button hover:bg-[#112240] focus:bg-[#112240] p-4 w-52" onClick={()=>setExperience(1)}  >StartUp</button></li>
         <li><button className="experience-button  hover:bg-[#112240] p-4 w-52  focus:bg-[#112240] " onClick={()=>setExperience(2)}>Aicte Idealab</button></li>
         <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(3)}>KLIC</button></li>
         {/* <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(4)}>Starry</button></li> */}
         {/* <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(5)}>MullenLowe</button></li> */}
       </ul> 
-        <div>
+       {/* big devices ul ends here */}
+
+        <div className=' md:block'>
+          {/* small devices ul starts here */}
+        <ul className='md:hidden  mb-10 text-[#8892B0] ml-7 mt-12  font-semibold  text-xl flex justify-evenly gap-12 '>
+    <li><button  onClick={()=>setExperience(1)}  >StartUp</button></li>
+    <li><button  onClick={()=>setExperience(2)}>Aicte Idealab</button></li>
+    <li><button  onClick={()=>setExperience(3)}>KLIC</button></li>
+      </ul> 
+      {/* small devices ul ends here */}
+          
           {experience===1 &&
            <Exp_comp title="Software Developer  @KLIC KALCHURI INCUBATION CENTER " dateto="May 24 - Present"
            first_para="Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more" 
@@ -65,9 +78,20 @@ including designers and backend developers,"
           third_para="Collaborated with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders"
          fourth_para="Provided leadership within engineering department through close collaboration, knowledge shares, and mentorship"
          />}
+         
   </div>
      
     </div>
+
+      {/* this ul is only for small devices */}
+
+    {/* <ul className='md:hidden  text-[#8892B0] ml-7 mt-12  font-semibold  text-xl flex justify-evenly gap-12 '>
+    <li><button  onClick={()=>setExperience(1)}  >StartUp</button></li>
+    <li><button  onClick={()=>setExperience(2)}>Aicte Idealab</button></li>
+    <li><button  onClick={()=>setExperience(3)}>KLIC</button></li>
+
+      </ul> */}
+       {/* small devices ul ends here */}
     </>
     
   )
