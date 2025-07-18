@@ -1,5 +1,6 @@
 import Image from "../assets/sid.jpg"
 import { Slide,Fade ,Bounce} from "react-awesome-reveal";
+import Marquee from "react-fast-marquee";
 const Aboutme = () => {
   return (
   <div className="md:relative">
@@ -69,7 +70,23 @@ Despite expanding my interests and becoming a pantomath, I never abandoned my fi
     
 
   </div> //
+
 </Fade>
+<div className="text-center text-[#76829E] font-mono  m-5    font-semibold text-5xl">Pages I've Turned And Words That Shaped Me
+</div>
+<Marquee className="bg-[#0A192F]" speed={20}>
+  <img src="/books_images/rework.jpg" className="w-64"alt="Rework "></img> 
+  <img src="/books_images/elonmusk.jpg" className="w-64"alt="Elon Musk"></img>
+  <img src="/books_images/psychology.jpg" className="w-64"alt="psychology  of money"></img>
+  <img src="/books_images/thepersonalmba.jpg" className="w-64"alt="personalmba"></img>
+  <img src="/books_images/zerotoone.jpg" className="w-64"alt="zerotoone"></img>
+  <img src="/books_images/lawsofpower.jpg" className="w-72"alt="48laws"></img>
+  <img src="/books_images/richdad.jpg" className="w-72"alt="richdad"></img>
+  <img src="/books_images/emythrevised.jpg" className="w-64"alt="emyth revisted"></img>
+  <img src="/books_images/whomoved.jpg" className="w-64"alt="whomoved"></img>
+  
+
+</Marquee>
 </div>  //Main closing
   )
 }
