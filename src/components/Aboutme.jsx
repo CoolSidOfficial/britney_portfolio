@@ -6,12 +6,12 @@ const Aboutme = () => {
     <Fade triggerOnce delay={100}>
      
         <span className="text-[#C1CAEB]  text-2xl  md:text-5xl md:m-12 m-4 font-bold md:inline">01. About Me</span>
-      <span className=" md:absolute  md:rotate-90	 md:left-[48%] md:top-[-250px] md:h-[58%] bg-gray-400 md:w-[0.5px]"></span>  {/* Line  */}
+      {/* <span className=" md:absolute  md:rotate-90	 md:left-[48%] md:top-[-250px] md:h-[58%] bg-gray-400 md:w-[0.5px]"></span>  Line  */}
 
 <div className="m-4  flex md:m-24 text-white">  {/*  Creating two side one in left one in right */}
 
   
-<div className= " text-[#818CA9] font-semibold md:text-xl text-lg flex  w-110 ">
+<div className= " text-[#818CA9] font-semibold md:text-2xl text-lg flex  w-[600px] ">
   My name is Siddhant Jain. I am a very ambitious person who enjoys learning new things and is inherently curious. 
 <br/>
 <br/>
@@ -28,10 +28,11 @@ During the COVID lockdown, I seized the opportunity to broaden my knowledge base
 <br/>
 <br/>
 Despite expanding my interests and becoming a pantomath, I never abandoned my first hobby, computer science. I focused on specializing in this field while maintaining a generalist approach to other subjects.
-<br/>      
+<br/> 
+     
 </div>
-<div className="text-white  ms-24 text-4xl font-serif ">Languages and Tools:</div>
-<div className="  grid grid-cols-3 gap-1 ">
+{/* <div className="text-white  ms-24 text-4xl font-serif  ">Languages and Tools:</div> */}
+<div className="  grid grid-cols-4 gap-3  w-[600px] h-[200px]">
 
     <img src="/tools_logo/python.png" alt="Python"></img>
     <img src="/tools_logo/cpp.png"  className="" alt="C++"></img>
@@ -43,8 +44,26 @@ Despite expanding my interests and becoming a pantomath, I never abandoned my fi
     <img src="/tools_logo/css.png"  className="" alt="CSS"></img>
     <img src="/tools_logo/react.png"  className="" alt="React"></img>
     <img src="/tools_logo/express.png"  className="" alt="Express Js"></img>
-    <img src="/tools_logo"  className="" alt="HTML/CSS"></img>
-    <img src="/tools_logo"  className="" alt="HTML/CSS"></img>
+    <img src="/tools_logo/scikit-learn.svg"  className="" alt="scikit-learn"></img>
+    <img src="/tools_logo/request.png"  className="" alt="request module"></img>
+    <img src="/tools_logo/fastapi.svg"  className="" alt="Fast Api"></img>
+    <img src="/tools_logo/django.png"  className="" alt="Django"></img>
+    <img src="/tools_logo/mongo_db.png"  className="" alt="MongoDb"></img>
+    <img src="/tools_logo/azure.png"  className="" alt="Azure"></img>
+    <img src="/tools_logo/tailwind.png"  className="" alt="Tailwind"></img>
+    <img src="/tools_logo/docker.png"  className="" alt="Docker"></img>
+    <img src="/tools_logo/git.svg"  className="" alt="Git"></img>
+    <img src="/tools_logo/bash.svg"  className="" alt="Bash"></img>
+    <img src="/tools_logo/kali.svg"  className="" alt="Kali linux"></img>
+    <img src="/tools_logo/matplotlib.png"  className="" alt="matplotlib"></img>
+    <img src="/tools_logo/pyrogram.png"  className="" alt="pyrogram"></img>
+    <img src="/tools_logo/jupyter.png"  className="" alt="jupter-notebook"></img>
+    <img src="/tools_logo/burpsuite.svg"  className="" alt="BurpSuite"></img>
+    <img src="/tools_logo/next.svg"  className="" alt="Next Js"></img>
+    <img src="/tools_logo/socket.svg"  className="" alt="socket"></img>
+    <img src="/tools_logo/metasploit.png"  className="" alt="metasploit"></img>
+
+
 
 </div>
     
