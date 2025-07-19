@@ -39,7 +39,7 @@ const Experience = () => {
       {/* small devices ul ends here */}
           
           {experience===1 &&
-           <Exp_comp title="Software Developer  @KLIC KALCHURI INCUBATION CENTER " dateto="May 24 - Present"
+           <Exp_comp title="Software Developer  @KLIC KALCHURI INCUBATION CENTER " dateto="May 24 - Jan 24"
            first_para="Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more" 
            second_para="Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements"
            third_para="Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders"

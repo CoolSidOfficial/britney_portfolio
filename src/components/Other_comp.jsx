@@ -15,9 +15,9 @@ const Other_comp = (props) => {
         <span className="p-2  text-[#CCD6F6] font-semibold text-xl   ">{props.title}</span>
         <p className=' p-2 mt-3 text-[#A1ACCB] font-semibold'>{props.desc} </p>
        
-       <span className=" text-[#354462] hover:text-white">Javascript</span>
-       <span className=" p-4 text-[#354462]  hover:text-white">Wordpress</span>
-       <span className=" text-[#354462] text-lg  hover:text-white">PHP</span>
+       <span className=" text-[#354462] hover:text-white">{props.stack[0]}</span>
+       <span className=" p-4 text-[#354462]  hover:text-white">{props.stack[1]}</span>
+       <span className=" text-[#354462] text-lg  hover:text-white">{props.stack[2]}</span> 
 </div>
 
     </div>
