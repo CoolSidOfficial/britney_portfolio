@@ -8,7 +8,7 @@ const Other_comp = (props) => {
        <div className="flex  space-x-52 ">
 
         <img className="w-12" src="sj.svg "></img>
-          <a href="">  <img className="w-12 h-10 text-white " src="icons8-external-link.svg "></img></a>
+          <a href={props.weblink}>  <img className="w-12 h-10 text-white " src="icons8-external-link.svg "></img></a>
        </div>
 <div className='md:mt-8 mt ' >
 
