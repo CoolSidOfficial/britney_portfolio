@@ -16,7 +16,7 @@ const App = () => {
       <ul className="w-12  fixed bottom-[220px] bg-blend-normal z-30 hidden md:block  ">
         <li className="p-2 "><a href="https://github.com/CoolSidOfficial" target="_blank"><img src="github-mark-white.svg" alt="Github"/></a></li>
         <li className="p-2"><a href="https://www.linkedin.com/in/siddhant-jain-coolsidofficial/" target="_blank"><img src="linkedin-white.png" alt="LinkedIn"/></a></li>
-        <li className="p-1  w-18"><a href="https://leetcode.com/CoolSidOfficial/" target="_blank"><img src="leetcode.png" alt="LeetCode"/></a></li>
+        <li className="p-1  w-18"><a href="https://leetcode.com/u/Sid_Jain_2003/" target="_blank"><img src="leetcode.png" alt="LeetCode"/></a></li>
         <li className="p-2"><a href="https://www.instagram.com/coolsid_30/"><img src="instagram.png"   target="_blank" alt="Instagram"/></a></li>
         <li className="p-2"><a href="https://twitter.com/officialcoolsid/" target="_blank"><img src="x.png" alt="X"/></a></li>
 
