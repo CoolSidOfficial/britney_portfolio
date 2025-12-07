@@ -22,9 +22,13 @@ const App = () => {
 
       </ul> 
       <span className="md:fixed md:bottom-[1%] md:left-[25px] md:h-[20%] bg-gray-400 md:w-1"></span>
-      <a className=" hidden md:block fixed md:fixed bottom-[39%] left-[86%] rotate-90 text-lg text-[#8892B0] font-bold z-100" href="mailto:siddhantjainmvm@gmail.com">siddhantjainmvm@gmail.com&nbsp;&nbsp;</a>
+      {/* // right */}
+      
+      <a className=" hidden md:block fixed md:fixed bottom-[40vh] md:right-[11vh]  translate-x-[50%] rotate-90 text-lg text-[#8892B0] font-bold z-100" href="mailto:siddhantjainmvm@gmail.com">siddhantjainmvm@gmail.com&nbsp;&nbsp;</a> 
+      <span className="  md:fixed  md:bottom-[1vh] md:right-[11vh] md:h-[20%] bg-gray-400 md:w-1"></span>
 
-      <span className="fixed  md:fixed md:bottom-[1%] md:left-[94.5%] md:h-[20%] bg-gray-400 md:w-1"></span>
+
+
       <Header uname="Siddhant Jain" title="Turning ideas into impact through Web Dev" description={["I 'm a full-stack web developer with a passion ",<br/>," for creating dynamic and interactive web applications.",<br/>,"I have experience in both front-end and back-end technologies",<br/>,"and I m always eager to learn and implement new skills" ] } />
       </Fade  >
       <Aboutme />
