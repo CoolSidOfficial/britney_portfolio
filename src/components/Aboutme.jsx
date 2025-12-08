@@ -33,41 +33,29 @@ Despite expanding my interests and becoming a pantomath, I never abandoned my fi
      
 </div>
 {/* <div className="text-white  ms-24 text-4xl font-serif  ">Languages and Tools:</div> */}
-<div className="  grid grid-cols-4 gap-3  w-[600px] h-[200px]">
 
-    <img src="/tools_logo/python.png" alt="Python"></img>
-    <img src="/tools_logo/cpp.png"  className="" alt="C++"></img>
-    <img src="/tools_logo/java.png" className="" alt="Java"></img>
-    <img src="/tools_logo/mysql.png"  className="" alt="MY-SQL"></img>
-    <img src="/tools_logo/sqlite.png"  className="" alt="Sqlite"></img>
-    <img src="/tools_logo/javascript.png"  className="" alt="JavaScript"></img>
-    <img src="/tools_logo/html.png"  className="" alt="HTML"></img>
-    <img src="/tools_logo/css.png"  className="" alt="CSS"></img>
-    <img src="/tools_logo/react.png"  className="" alt="React"></img>
-    <img src="/tools_logo/express.png"  className="" alt="Express Js"></img>
-    <img src="/tools_logo/scikit-learn.svg"  className="" alt="scikit-learn"></img>
-    <img src="/tools_logo/request.png"  className="" alt="request module"></img>
-    <img src="/tools_logo/fastapi.svg"  className="" alt="Fast Api"></img>
-    <img src="/tools_logo/django.png"  className="" alt="Django"></img>
-    <img src="/tools_logo/mongo_db.png"  className="" alt="MongoDb"></img>
-    <img src="/tools_logo/azure.png"  className="" alt="Azure"></img>
-    <img src="/tools_logo/tailwind.png"  className="" alt="Tailwind"></img>
-    <img src="/tools_logo/docker.png"  className="" alt="Docker"></img>
-    <img src="/tools_logo/git.svg"  className="" alt="Git"></img>
-    <img src="/tools_logo/bash.svg"  className="" alt="Bash"></img>
-    <img src="/tools_logo/kali.svg"  className="" alt="Kali linux"></img>
-    <img src="/tools_logo/matplotlib.png"  className="" alt="matplotlib"></img>
-    <img src="/tools_logo/pyrogram.png"  className="" alt="pyrogram"></img>
-    <img src="/tools_logo/jupyter.png"  className="" alt="jupter-notebook"></img>
-    <img src="/tools_logo/burpsuite.svg"  className="" alt="BurpSuite"></img>
-    <img src="/tools_logo/next.svg"  className="" alt="Next Js"></img>
-    <img src="/tools_logo/socket.svg"  className="" alt="socket"></img>
-    <img src="/tools_logo/metasploit.png"  className="" alt="metasploit"></img>
-
-
-
+     <div className="grid grid-cols-4 gap-3 w-[600px] h-[200px]">
+  {[
+    "Python","Cpp","Java","mysql","Sqlite","JavaScript","HTML","CSS",
+    "React","express","scikit-learn","request","fastapi",
+    "Django","mongo_db","Azure","Tailwind","Docker","git","Bash",
+   "matplotlib","pyrogram","jupyter","BurpSuite",
+    "next","socket","metasploit"
+  ].map((tool, index) => (
+    <div key={index} className="relative group w-[100px] h-[100px]">
+      <img
+        src={`/tools_logo/${tool.toLowerCase().replace(/ /g,'_')}.png`}
+        alt={tool}
+        className="w-full h-full object-contain"
+      />
+      {/* Tooltip */}
+      <span className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-black text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+        {tool}
+      </span>
+    </div>
+  ))}
 </div>
-    
+
 
   </div> //
 

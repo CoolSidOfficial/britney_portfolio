@@ -5,10 +5,10 @@ const categories = [
   { key: "all", label: "All" },
   { key: "web", label: "Frontend/Backend " },
   { key: "ml", label: "Machine Learning" },
-  { key: "app", label: "Android Apps" },
   { key: "python", label: "Python CLI/GUI" },
   { key: "cyber", label: "Cybsersecurity/Linux Scripts" },
   { key: "java/c++", label: "Java/C++ Scripts" },
+  { key: "app", label: "Android Apps" },
   { key: "Iot", label: "IOT/Robotics" },
 
 
