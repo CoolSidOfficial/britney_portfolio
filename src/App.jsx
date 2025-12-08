@@ -28,7 +28,7 @@ const App = () => {
 
 
 
-      <Header uname="Siddhant Jain" title="Turning ideas into impact through Web Dev" description={["I 'm a full-stack web developer with a passion ",<br/>," for creating dynamic and interactive web applications.",<br/>,"I have experience in both front-end and back-end technologies",<br/>,"and I m always eager to learn and implement new skills" ] } />
+      <Header uname="Siddhant Jain" title="Turning ideas into impact through Software Development" description={["Hi, I’m Siddhant Jain from LNCT Bhopal. My core competencies are full-stack engineering, backend architecture, cloud deployments, and applied machine learning. I work primarily with FastAPI, Node.js/Express, Next.js, React, PostgreSQL/MongoDB, and I focus heavily on secure API design, authentication flows, and system reliability" ] } />
       </Fade  >
       <Aboutme />
      <Fade delay={250}>
