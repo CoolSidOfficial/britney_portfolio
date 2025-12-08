@@ -60,7 +60,7 @@ const allProjects = [
     title: "EasyAircrack",
     stack: ["Python3", "bash", "os"],
     desc: "This Python-based script automates WiFi hacking tasks. Built for Debian-based operating systems, it simplifies the aircrack-ng workflow for auditing wireless networks.",
-    weblink: "",
+    weblink: "https://github.com/CoolSidOfficial/easy_aircrack-ng",
     category: ["cyber","python"]
   },
 
@@ -81,7 +81,7 @@ const allProjects = [
   },
 
   {
-    title: "CoolWeather Mobile APP",
+    title: "CoolWeather Mobile App",
     stack: ["React Native", "Weather Api", "JavaScript"],
     desc: "CoolWeather is a mobile app that provides basic weather information using your location. Built with React Native, it offers real-time weather updates with a simple and intuitive UI.",
     weblink: "https://github.com/CoolSidOfficial/CoolWeather_Android",
@@ -110,7 +110,80 @@ const allProjects = [
     desc: "Our Java file arranger simplifies offline file organization for various file types. It's a lightweight, user-friendly tool that helps you tidy up your files efficiently.",
     weblink: "https://github.com/CoolSidOfficial/Java_file_Arranger",
     category: ["java/c++"]
-  }
+  },
+   {
+    title: "Indinum-gen",
+    stack: ["C++"],
+    desc: "This C++ script generates Indian phone numbers along with their state-wise codes and includes special ISP prefixes. It's intended for dictionary attacks, commonly used in security testing to brute force phone number-based authentication systems.",
+    weblink: "https://github.com/CoolSidOfficial/indinum-gen",
+    category: ["java/c++","cyber"]
+  },
+   {
+    title: "Cool Encrypt",
+    stack: ["python"],
+    desc: "CoolEncrypt is a lightweight, fast, and user-friendly tool that instantly converts your text into secure encrypted form using a secret key. It supports quick one-click encryption and decryption, requires no setup, and works in real time",
+    weblink: "https://github.com/CoolSidOfficial/coolencrypt",
+    category: ["cyber","python"]
+  },
+   {
+    title: "Python File Arranger",
+    stack: ["python"],
+    desc: "This is a small Python script that scans a given folder and automatically organizes its files based on their extensions. It creates folders for each file type (like .jpg, .pdf, .txt) and moves the files into their respective directories, helping keep the path clean and neatly arranged.",
+    weblink: "https://github.com/CoolSidOfficial/File_Arranger",
+    category: ["python"]
+  },
+   {
+    title: "Python File Arranger",
+    stack: ["python"],
+    desc: "This is a small Python script that scans a given folder and automatically organizes its files based on their extensions. It creates folders for each file type (like .jpg, .pdf, .txt) and moves the files into their respective directories, helping keep the path clean and neatly arranged.",
+    weblink: "https://github.com/CoolSidOfficial/File_Arranger",
+    category: ["python"]
+  },
+   {
+    title: "ClsColor.h",
+    stack: ["c++"],
+    desc: "This is small c++ library created for myself to avoid writing verbose ansi code you can import it by adding it to the same folder where your c++ code is lying",
+    weblink: "https://github.com/CoolSidOfficial/clscolor.h",
+    category: ["java/c++"]
+  },
+  {
+    title: "Lnct Placement Extractor/Analyzer",
+    stack: ["python"],
+    desc: "This is small c++ library created for myself to avoid writing verbose ansi code you can import it by adding it to the same folder where your c++ code is lying",
+    weblink: "https://github.com/CoolSidOfficial/Lnct_Placement_data",
+    category: ["python"]
+  },
+  
+  {
+    title: "Esp32_weather_station",
+    stack: ["Electronics"],
+    desc: "An ESP-based weather station that collects environmental data like temperature, humidity, and pressure using sensors and sends it to the cloud or displays it locally.",
+    weblink: "https://github.com/CoolSidOfficial/iot-stuff/tree/main/esp32_weather_station",
+    category: ["Iot"]
+  },
+  {
+    title: "Legal Gyaan",
+    stack: ["Mern Stack"],
+    desc: "Legal Gyaan is an AI-driven platform designed to simplify legal understanding for students, citizens, and professionals",
+    weblink: "https://github.com/LegalGyaan",
+    category: ["web"]
+  },
+    {
+    title: "Geo Track",
+    stack: ["React Native"],
+    desc: "Legal Gyaan is an AI-driven platform designed to simplify legal understanding for students, citizens, and professionals",
+    weblink: "https://github.com/SIH24-KEENDEVS/GeoTrack_app",
+    category: ["app"]
+  },
+{
+    title: "Esp32_weather_station",
+    stack: ["Electronics"],
+    desc: "An ESP-based weather station that collects environmental data like temperature, humidity, and pressure using sensors and sends it to the cloud or displays it locally.",
+    weblink: "https://github.com/CoolSidOfficial/iot-stuff/tree/main/esp32_weather_station",
+    category: ["Iot"]
+  },
+
+
 ];
 
 const Other_Proj = () => {
