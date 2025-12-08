@@ -12,7 +12,7 @@ const Aboutme = () => {
 <div className="m-4  flex md:m-24 text-white">  {/*  Creating two side one in left one in right */}
 
   
-<div className= " text-[#818CA9] font-semibold md:text-2xl text-lg flex  w-[600px] ">
+<div className= " text-[#818CA9] font-semibold md:text-2xl text-lg md:flex  w-[600px] ">
   My name is Siddhant Jain. I am a very ambitious person who enjoys learning new things and is inherently curious. 
 <br/>
 <br/>
@@ -34,7 +34,7 @@ Despite expanding my interests and becoming a pantomath, I never abandoned my fi
 </div>
 {/* <div className="text-white  ms-24 text-4xl font-serif  ">Languages and Tools:</div> */}
 
-     <div className="grid grid-cols-4 gap-3 w-[600px] h-[200px]">
+     <div className="md:grid grid-cols-4 gap-3 w-[600px] h-[200px]">
   {[
     "Python","Cpp","Java","mysql","Sqlite","JavaScript","HTML","CSS",
     "React","express","scikit-learn","request","fastapi",

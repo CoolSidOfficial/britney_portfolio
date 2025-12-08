@@ -17,13 +17,13 @@ const Navbar = () => {
 
 
 
+    </Fade>
 
     <a href="#" onClick={()=> update_nav(!show_nav)} >
       <img className="w-24 ml-[70%] md:hidden block"  src="/menu_icon.png" />
       </a>
       
 
-    </Fade>
           { show_nav &&
     <nav className="bg-[#112240] h-[100%]  text-[#CCD6F6] w-[80%] z-10 flex flex-col  font-mono font-semibold items-center  text-2xl  fixed right-0 ">
         <a  className="hover:text-white  p-7 " href="#about">01. About</a>

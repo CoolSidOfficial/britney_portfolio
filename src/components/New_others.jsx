@@ -207,7 +207,7 @@ const filteredProjects = selectedCategory === "all"
         view the archive
       </a>
 
-      <div className="  flex gap-4 justify-center  px-5 mt-10 scrollbar-hide">
+      <div className="  md:flex md:gap-4 md:justify-center  md:px-5 mt-10 scrollbar-hide">
         {categories.map((cat) => (
           <button
             key={cat.key}
@@ -223,7 +223,7 @@ const filteredProjects = selectedCategory === "all"
         ))}
       </div>
 
-      <div className="md:grid md:grid-cols-3 md:gap-7 md:m-28 m-8">
+      <div className="md:grid  md:grid-cols-3 md:gap-7 md:m-28 m-8">
         {filteredProjects.map((proj, index) => (
           <Other_comp
             key={index}
