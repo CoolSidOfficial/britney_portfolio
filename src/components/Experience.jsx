@@ -20,33 +20,52 @@ const Experience = () => {
     
 
        {/* this ul is for bigger screens */}
-      <ul className="hidden  md:block text-2xl text-[#8892B0]">
-        <li><button className ="experience-button hover:bg-[#112240] focus:bg-[#112240] p-4 w-52" onClick={()=>setExperience(1)}  >StartUp</button></li>
-        <li><button className="experience-button  hover:bg-[#112240] p-4 w-52  focus:bg-[#112240] " onClick={()=>setExperience(2)}>Aicte Idealab</button></li>
-        <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(3)}>KLIC</button></li>
-        {/* <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(4)}>Starry</button></li> */}
-        {/* <li><button className="experience-button hover:bg-[#112240] p-4 w-52  focus:bg-[#112240]" onClick={()=>setExperience(5)}>MullenLowe</button></li> */}
-      </ul> 
+ <ul className="hidden md:block text-2xl text-[#8892B0]">
+  <li>
+    <button
+      className={`experience-button p-4 w-52 transition-colors duration-200 ${
+        experience === 1 ? "bg-[#112240] text-[#64FFDA]" : "hover:bg-[#112240] text-[#8892B0]"
+      }`}
+      onClick={() => setExperience(1)}
+    >
+      Aicte Idealab
+    </button>
+  </li>
+  <li>
+    <button
+      className={`experience-button p-4 w-52 transition-colors duration-200 ${
+        experience === 2 ? "bg-[#112240] text-[#64FFDA]" : "hover:bg-[#112240] text-[#8892B0]"
+      }`}
+      onClick={() => setExperience(2)}
+    >
+      Dare To Start KLIC
+    </button>
+  </li>
+  <li>
+    <button
+      className={`experience-button p-4 w-52 transition-colors duration-200 ${
+        experience === 3 ? "bg-[#112240] text-[#64FFDA]" : "hover:bg-[#112240] text-[#8892B0]"
+      }`}
+      onClick={() => setExperience(3)}
+    >
+      Freelancing
+    </button>
+  </li>
+</ul>
+
        {/* big devices ul ends here */}
 
         <div className=' md:block'>
           {/* small devices ul starts here */}
         <ul className='md:hidden  mb-10 text-[#8892B0] ml-7 mt-12    font-semibold  text-xl flex justify-evenly gap-12 '>
-    <li><button  onClick={()=>setExperience(1)}  >StartUp</button></li>
-    <li><button  onClick={()=>setExperience(2)}>Aicte Idealab</button></li>
-    <li><button  onClick={()=>setExperience(3)}>KLIC</button></li>
+    <li><button  onClick={()=>setExperience(1)}>Aicte Idealab</button></li>
+    <li><button  onClick={()=>setExperience(2)}>KLIC Incubation</button></li>
+    <li><button  onClick={()=>setExperience(3)}>Freelance Developer</button></li>
       </ul> 
       {/* small devices ul ends here */}
           
-          {experience===1 &&
-           <Exp_comp title="Software Developer  @KLIC KALCHURI INCUBATION CENTER " dateto="May 24 - Jan 24"
-           first_para="Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more" 
-           second_para="Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements"
-           third_para="Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders"
-           fourth_para="Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship
-           "
-           />}
-           {experience===2 &&
+    
+           {experience===1 &&
            <Exp_comp title="Project Developer @ Aicte Idealab
            " dateto="Sept 2023 - April 2024"
            first_para="Developed a fully functional, responsive full-stack website using Next.js Tailwind , providing a seamless user
@@ -56,7 +75,7 @@ experience."
            third_para="Utilized version control systems, such as Git, to track and manage project"
            fourth_para="Used Mongo DB as a backend to store data on Atlas server and used Rest Api to integrate systems"
            />}
-            {experience===3 && <Exp_comp title=" Frontend Developer @ KLIC KALCHURI INCUBATION CENTER" dateto="April 2023 -Sept 2023"
+            {experience===2 && <Exp_comp title=" Frontend Developer @ KLIC KALCHURI INCUBATION CENTER" dateto="April 2023 -Sept 2023"
            first_para="Implemented a dashboard application using MERN stack"
          second_para="Developed 5+ frontend websites using HTML/CSS JavaScript,React"
       third_para=" Implemented responsive web design techniques to ensure compatibility and optimal viewing experience on
@@ -64,6 +83,18 @@ mobile devices"
       fourth_para="Work closely under Apeiro medica in Dare to start program and Collaborated with cross-functional teams,
 including designers and backend developers,"
         />}
+      {experience===3 &&
+  <Exp_comp 
+    title="Freelance Developer @ Independent Projects" 
+    dateto="May 2022 - March 2023"
+    first_para="Develop and deliver high-quality web, mobile, and automation projects for clients across various industries, ensuring robust and maintainable code." 
+    second_para="Collaborate with clients to understand project requirements, propose technical solutions, and translate business needs into functional software products."
+    third_para="Work closely with designers and project managers to implement UI/UX designs, integrate APIs, and optimize application performance for seamless user experiences."
+    fourth_para="Provide guidance on best practices, code reviews, and project planning, ensuring timely delivery and high client satisfaction."
+  />
+}
+
+        
           {experience===4&&<Exp_comp title="Software Engineer Co-op @ Starry
          " dateto="July - December 2016"
          first_para="Engineered and improved major features of Starry's customer-facing Android web app using ES6, Handlebars, Backbone, Marionette, and CSS"

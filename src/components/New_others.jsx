@@ -3,11 +3,15 @@ import Other_comp from "./Other_comp";
 
 const categories = [
   { key: "all", label: "All" },
-  { key: "web", label: "Web" },
-  { key: "app", label: "App" },
-  { key: "python", label: "Python" },
+  { key: "web", label: "Frontend/Backend " },
   { key: "ml", label: "Machine Learning" },
-  { key: "cyber", label: "Cybsersecurity" },
+  { key: "app", label: "Android Apps" },
+  { key: "python", label: "Python CLI/GUI" },
+  { key: "cyber", label: "Cybsersecurity/Linux Scripts" },
+  { key: "java/c++", label: "Java/C++ Scripts" },
+  { key: "Iot", label: "IOT/Robotics" },
+
+
 ];
 
 const allProjects = [
@@ -16,7 +20,8 @@ const allProjects = [
     stack: ["Scikit-Learn", "Jupyter Notebook", "Numpy"],
     desc: "CrimeInsight is an advanced crime prediction tool that leverages key factors such as age, city, and time to forecast potential crime incidents. By utilizing a decision tree algorithm, the system analyzes historical crime data to provide predictions.",
     weblink: "https://github.com/CoolSidOfficial/CrimeInsight",
-    category: "ml"
+    category: ["ml","python"]
+
   },
 
   {
@@ -24,7 +29,7 @@ const allProjects = [
     stack: ["Python3", "Pyrogram", "Mongo Db"],
     desc: "This Python-based Telegram bot extracts GPS coordinates of an image from its metadata and presents exact location details.",
     weblink: "https://github.com/CoolSidOfficial/Image_Loc",
-    category: "python"
+    category: ["python"]
   },
 
   {
@@ -32,7 +37,7 @@ const allProjects = [
     stack: ["HTML", "CSS", "JavaScript"],
     desc: "Our fish-selling website frontend, built with HTML5, CSS3, and JavaScript. Responsive design techniques make it accessible on all devices and offer a clean UI for product browsing.",
     weblink: "https://github.com/CoolSidOfficial/fiqua",
-    category: "web"
+    category: ["web"]
   },
 
   {
@@ -40,7 +45,7 @@ const allProjects = [
     stack: ["Scikit-Learn", "Jupyter Notebook", "Numpy"],
     desc: "This is a machine learning model that uses a simple regression model to predict India's GDP using historical data trends.",
     weblink: "https://github.com/CoolSidOfficial/Indian_Gdp_Predictor",
-    category: "ml"
+    category: ["ml","python"]
   },
 
   {
@@ -48,7 +53,7 @@ const allProjects = [
     stack: ["Scikit-Learn", "Jupyter Notebook", "Numpy"],
     desc: "Predict someone's fitness level using a KNN classifier model, with Flask as the backend to process model predictions.",
     weblink: "https://github.com/CoolSidOfficial/KNNFitSense",
-    category: "ml"
+    category: ["ml","python","web"]
   },
 
   {
@@ -56,7 +61,7 @@ const allProjects = [
     stack: ["Python3", "bash", "os"],
     desc: "This Python-based script automates WiFi hacking tasks. Built for Debian-based operating systems, it simplifies the aircrack-ng workflow for auditing wireless networks.",
     weblink: "",
-    category: "cyber"
+    category: ["cyber","python"]
   },
 
   {
@@ -64,7 +69,7 @@ const allProjects = [
     stack: ["Pyinput", "Smtplib", "Python3"],
     desc: "This tool logs all user input in real time and transmits the data to a Go-based file server. The server link is then sent to a specified email address for remote log retrieval.",
     weblink: "https://github.com/CoolSidOfficial/easy_aircrack-ng",
-    category: "cyber"
+    category: ["cyber","python"]
   },
 
   {
@@ -72,7 +77,7 @@ const allProjects = [
     stack: ["OpenPyxl", "PyperClip", "PyAutoGui"],
     desc: "Report Helper is a CLI tool developed in Python that streamlines proofreading tasks. It handles Excel file operations, extracts specified questions, and maps them to the Ctrl+M key for quick insertion.",
     weblink: "https://github.com/CoolSidOfficial/Report_Helper",
-    category: "python"
+    category: ["python"]
   },
 
   {
@@ -80,7 +85,7 @@ const allProjects = [
     stack: ["React Native", "Weather Api", "JavaScript"],
     desc: "CoolWeather is a mobile app that provides basic weather information using your location. Built with React Native, it offers real-time weather updates with a simple and intuitive UI.",
     weblink: "https://github.com/CoolSidOfficial/CoolWeather_Android",
-    category: "app"
+    category: ["app"]
   },
 
   {
@@ -88,7 +93,7 @@ const allProjects = [
     stack: ["Python3", "Tkinter", "colorama"],
     desc: "Our Python GUI calculator provides a simple yet efficient interface for performing basic arithmetic operations. Built with Tkinter, it's a lightweight tool perfect for quick calculations on the go.",
     weblink: "https://github.com/CoolSidOfficial/gui_calc",
-    category: "python"
+    category: ["python"]
   },
 
   {
@@ -96,7 +101,7 @@ const allProjects = [
     stack: ["Django", "Python3", "Base64"],
     desc: "Our Python Django website offers a seamless solution for converting binary data back into text format with a clean, functional web interface.",
     weblink: "https://github.com/CoolSidOfficial/TextBin",
-    category: "web"
+    category: ["web","python"]
   },
 
   {
@@ -104,17 +109,16 @@ const allProjects = [
     stack: ["Java"],
     desc: "Our Java file arranger simplifies offline file organization for various file types. It's a lightweight, user-friendly tool that helps you tidy up your files efficiently.",
     weblink: "https://github.com/CoolSidOfficial/Java_file_Arranger",
-    category: "app"
+    category: ["java/c++"]
   }
 ];
 
 const Other_Proj = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
-  const filteredProjects =
-    selectedCategory === "all"
-      ? allProjects
-      : allProjects.filter((p) => p.category === selectedCategory);
+const filteredProjects = selectedCategory === "all"
+    ? allProjects
+    : allProjects.filter(p => p.category.includes(selectedCategory));
 
   return (
     <div className="flex-col mt-[200px] text-center">
