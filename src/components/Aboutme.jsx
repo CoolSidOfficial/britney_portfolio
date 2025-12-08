@@ -6,7 +6,7 @@ const Aboutme = () => {
   <div className="md:relative">
     <Fade triggerOnce delay={100}>
      
-        <span className="text-[#C1CAEB]  text-2xl  md:text-5xl md:m-12 m-4 font-bold md:inline">01. About Me</span>
+        <span className="text-[#C1CAEB]  text-2xl  md:text-5xl md:m-12 m-4  font-bold md:inline">01. About Me</span>
       {/* <span className=" md:absolute  md:rotate-90	 md:left-[48%] md:top-[-250px] md:h-[58%] bg-gray-400 md:w-[0.5px]"></span>  Line  */}
 
 <div className="m-4  flex md:m-24 text-white">  {/*  Creating two side one in left one in right */}
