@@ -13,9 +13,9 @@ const Other_comp = (props) => {
 <div className='md:mt-8 mt ' >
 
         <span className="p-2  text-[#CCD6F6] font-semibold text-xl   ">{props.title}</span>
-        <p className=' p-2 mt-3 text-[#A1ACCB] font-semibold'>{props.desc} </p>
+        <p className=' p-1 mt-3 text-[#A1ACCB] font-semibold'>{props.desc} </p>
        
-       <span className=" text-[#354462] hover:text-white">{props.stack[0]}</span>
+       <span className="  text-[#354462] hover:text-white">{props.stack[0]}</span>
        <span className=" p-4 text-[#354462]  hover:text-white">{props.stack[1]}</span>
        <span className=" text-[#354462] text-lg  hover:text-white">{props.stack[2]}</span> 
 </div>

@@ -4,9 +4,8 @@ import Aboutme from "./components/Aboutme"
 import Experience from "./components/Experience"
 import { Contact } from "./components/Contact"
 import Projects from "./components/Projects"
-import Other_Proj from "./components/Other_Proj"
 import { Slide,Fade ,Bounce} from "react-awesome-reveal";
-
+import New_others from "./components/New_others"
 const App = () => {
 
    return (
@@ -40,7 +39,8 @@ const App = () => {
       <Projects/>
       </Fade>
 <Fade triggerOnce cascade  delay={100}>
-      <Other_Proj/>
+      {/* <Other_Proj/> */}
+      <New_others/>
 
 </Fade>
 <Fade triggerOnce delay={100}>
