@@ -6,7 +6,15 @@ import { Contact } from "./components/Contact"
 import Projects from "./components/Projects"
 import { Slide,Fade ,Bounce} from "react-awesome-reveal";
 import New_others from "./components/New_others"
+import { useEffect } from "react";
+import axios from "axios";
+
 const App = () => {
+useEffect(() => {
+    axios.get("https://britneybackend2-production.up.railway.app/api/log_ip")
+      .then(res => console.log("IP logged:", res.data))
+      .catch(err => console.error("Error logging IP:", err));
+  }, []);
 
    return (
     <>
