@@ -176,13 +176,26 @@ const allProjects = [
     category: ["app"]
   },
 {
-    title: "Esp32_weather_station",
+    title: "Bhopal_AQiStation",
     stack: ["Electronics"],
-    desc: "An ESP-based weather station that collects environmental data like temperature, humidity, and pressure using sensors and sends it to the cloud or displays it locally.",
-    weblink: "https://github.com/CoolSidOfficial/iot-stuff/tree/main/esp32_weather_station",
+    desc: "The Bhopal AQI Monitoring Station is a low-cost air quality monitoring project developed using the MQ-135 gas sensor and the ESP8266 Wi-Fi module.",
+    weblink: "https://github.com/CoolSidOfficial/BhopalAQiStation",
     category: ["Iot"]
   },
-
+  {
+    title: "Advocate-website",
+    stack: ["Next Js ","typescript"],
+    desc: "This project involves the creation and deployment of a portfolio website for an advocate using Next.js and tyepeScript.",
+    weblink: "https://github.com/CoolSidOfficial/Advocate-website",
+    category: ["web"]
+  },
+    {
+    title: "B Portfolio Site",
+    stack: ["Mern Stack ,Django"],
+    desc: "This project involves the development of a full-stack portfolio website using React for the frontend and Django for the backend.",
+    weblink: "https://github.com/CoolSidOfficial/britney_portfolio",
+    category: ["web"]
+  },
 
 ];
 
