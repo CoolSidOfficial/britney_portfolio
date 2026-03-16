@@ -28,10 +28,10 @@ const Navbar = () => {
 
           { show_nav &&
     <nav className="bg-[#112240] h-[100%]  text-[#CCD6F6] w-[80%] z-10 flex flex-col  font-mono font-semibold items-center  text-2xl  fixed right-0 ">
-        <a  className="hover:text-white  p-7 " href="#about">01. About</a>
-        <a className="hover:text-white p-7" href="#experience">02. Experience  </a>
-        <a className="hover:text-white p-7" href="#projects">03. Work</a>
-        <a  className="hover:text-white p-7"href="#contact">04. Contact </a>
+        <a  className="hover:text-white  p-7 " href="#about"> About</a>
+        <a className="hover:text-white p-7" href="#experience"> Experience  </a>
+        <a className="hover:text-white p-7" href="#projects"> Work</a>
+        <a  className="hover:text-white p-7"href="#contact"> Contact </a>
         <a   className=" p-3 border rounded  text-center  w-[150px] h-[60px]   transition-transform duration-300 transform hover:shadow-[7px_9px_0px_rgba(100,255,218,1)] hover:translate-y-[-2px] hover:translate-x-[-2px]  " href={Resume}> Resume</a>
     </nav>}
     
