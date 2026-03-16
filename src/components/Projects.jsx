@@ -1,34 +1,89 @@
-import React from 'react'
-import Proj_Comp from './proj_comp'
-import Mob_Proj_Comp from './Mob_Proj_Comp'
+import React from "react";
+import Proj_Comp from "./proj_comp";
 
 const Projects = () => {
+
+  const projects = [
+    {
+      side: "left",
+      title: "CoolGuide",
+      desc: "CoolGuide helps you find the perfect electronics for your needs. It features a recommendation engine, product search, and real-time chat between users.",
+      tags: ["Next.js", "FastAPI", "Tailwind", "MongoDB", "Socket.io"],
+      github: "https://github.com/CoolSidOfficial/CoolGuide",
+      live: "https://coolguide.live",
+      image: "/project_images/coolguide.png"
+    },
+
+    {
+      side: "rtl",
+      title: "CoolCounsel",
+      desc: "MP DTE college predictor that analyzes previous admission data and recommends suitable engineering colleges and branches for students.",
+      tags: ["React", "Node.js", "MongoDB", "Tailwind"],
+      github: "https://github.com/CoolSidOfficial/mp-dte-Counsel",
+      live: "https://coolcounsel.netlify.app",
+      image: "/project_images/coolcounsel.png"
+    },
+
+    {
+      side: "left",
+      title: "CoolForums",
+      desc: "A scalable discussion platform supporting topic-based threads, nested replies and real-time updates using WebSockets and Redis pub/sub.",
+      tags: ["Next.js", "PostgreSQL", "WebSockets", "Docker"],
+      github: "https://github.com/CoolSidOfficial/FORUMS",
+      live: "",
+      image: "/project_images/coolforums.png"
+    },
+
+    {
+      side: "rtl",
+      title: "KNNFitSense",
+      desc: "Fitness level prediction platform using a K-Nearest Neighbors machine learning model with real-time predictions through a React + Flask stack.",
+      tags: ["React", "Flask", "Scikit-learn", "Tailwind"],
+      github: "https://github.com/CoolSidOfficial/KNNFitSense",
+      live: "",
+      image: "/project_images/knnfitsense.png"
+    }
+  ];
+
   return (
-    <div  className="md:m-20  m-6 relative" id="projects">
-    <div >
-      <span className="text-white md:text-4xl text-2xl md:p-2"> 03.</span>
-<span className=' text-[#CCD6F6] md:text-4xl text-2xl font-semibold'>Some Things I’ve Built</span></div>
-<span className=" absolute  rotate-90	 left-[98%] bottom-[95%] md:left-[55%] md:bottom-[77%] h-[7%] md:h-[40%] bg-gray-400 w-[0.5px]"></span>
- <div className='hidden md:block'>
+    <section className="md:m-20 m-6 relative" id="projects">
 
-   <Proj_Comp  side ="ltl" title="CoolGuide" desc="CoolGuide helps you find the perfect electronics for your needs. Browse our guide, search for products, and connect with other users to make an informed decision." tags={["Next Js","FastApi","Tailwind"," MongoDB"]}  link="https://github.com/CoolSidOfficial/CoolGuide"/>
-   <Proj_Comp side="rtl" title="CoolCounsel" desc="Mock predictor based on previous years data to find the best MP DTE engineering colleges for you .Our advanced algorithm analyzes previous years' data to provide accurate predictions " tags={["React", "Mongo Db","Node Js","Tailwind"]}  link="https://github.com/CoolSidOfficial/mp-dte-Counsel"/>
-   <Proj_Comp  side ="ltl" title="Social V" desc="A social media frontend website is built using React, leveraging JavaScript for dynamic content rendering. &nbsp;&nbsp;&nbsp; The application employs state management  with React Router enables seamless navigation" tags={["React Js","CSS ","Npm","Javascript"]} link="https://coolsidofficial.github.io/SocialV/" />
-  
- </div>
- <div className='block md:hidden'>
+      {/* Section Title */}
+      <div>
+        <span className="text-white md:text-4xl text-2xl md:p-2">
+          03.
+        </span>
 
-   <Mob_Proj_Comp title="Social V" desc="A social media frontend website is built using React, leveraging JavaScript for dynamic content rendering. &nbsp;&nbsp;&nbsp; The application employs state management  with React Router enables seamless navigation" tags={["React Js","CSS ","Npm","Javascript"]}/> 
-   <Mob_Proj_Comp title="Py-Keylogger" desc="This  python based keylogger virus is designed to operate undetectably, capturing keystrokes . It logs all user input in real-time and transmits the data to a Go-based file server. and that link is sent to a specified email address" tags={["Python3","Pynput","Smtplib"," Windows OS API"]}/>
-  <Mob_Proj_Comp title="ProofReading-Report-Helper" desc="Report Helper is a CLI tool developed in Python that streamlines proofreading tasks. It handle Excel file operations, it extracts specified questions and maps them to the Ctrl+M key for quick insertion.  " tags={["Openpyxl", "Pyperclip","Pynput","PyautoGui"]}/>
+        <span className="text-[#CCD6F6] md:text-4xl text-2xl font-semibold">
+          Some Things I’ve Built
+        </span>
+      </div>
 
- </div>
- 
-  
-   
+      {/* Decorative line */}
+      <span className="absolute rotate-90 left-[98%] bottom-[95%] md:left-[55%] md:bottom-[77%] h-[7%] md:h-[40%] bg-gray-400 w-[0.5px]"></span>
 
-    </div>
-  )
-}
+      {/* Projects */}
+      <div className="mt-10">
 
-export default Projects
+        {projects.map((project, index) => (
+
+          <Proj_Comp
+            key={index}
+            side={project.side}
+            title={project.title}
+            desc={project.desc}
+            tags={project.tags}
+            github={project.github}
+            live={project.live}
+            image={project.image}
+          />
+
+        ))}
+
+      </div>
+
+    </section>
+  );
+};
+
+export default Projects;
