@@ -30,7 +30,7 @@ const Projects = () => {
       desc: "A scalable discussion platform supporting topic-based threads, nested replies and real-time updates using WebSockets and Redis pub/sub.",
       tags: ["Next.js", "PostgreSQL", "WebSockets", "Docker"],
       github: "https://github.com/CoolSidOfficial/FORUMS",
-      live: "",
+      live: "https://forums-self.vercel.app/tabs/categories",
       image: "/project_images/coolforums.png"
     },
 
@@ -40,7 +40,7 @@ const Projects = () => {
       desc: "Fitness level prediction platform using a K-Nearest Neighbors machine learning model with real-time predictions through a React + Flask stack.",
       tags: ["React", "Flask", "Scikit-learn", "Tailwind"],
       github: "https://github.com/CoolSidOfficial/KNNFitSense",
-      live: "",
+      live: "https://ml-fitness-sense.vercel.app/",
       image: "/project_images/knnfitsense.png"
     }
   ];
