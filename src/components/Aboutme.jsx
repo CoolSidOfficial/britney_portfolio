@@ -15,6 +15,10 @@ const skills = {
     "JWT", "Middleware"
   ],
 
+  "Languages": [
+    "JavaScript", "TypeScript", "Python", "Java", "C++"
+  ],
+
   "Databases": [
     "MongoDB", "PostgreSQL", "Redis"
   ],
@@ -36,7 +40,6 @@ const skills = {
 };
 
 const Aboutme = () => {
-
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -55,40 +58,49 @@ const Aboutme = () => {
 
             <div>
 
-              My name is Siddhant Jain. I am a very ambitious person who enjoys
-              learning new things and is inherently curious.
+              Hey, thanks for taking the time — here’s a quick overview of what I’ve been building.
 
               <br /><br />
 
-              I am passionate about understanding how things work, often
-              dismantling items to rebuild them and uncover their inner
-              workings. I believe in a first principle approach.
+              I’m a 22-year-old full-stack developer based in India, focused on building end-to-end systems where backend, data, and machine learning come together in production.
+
+              <br /><br />
+
+              I’ve worked on real-world platforms used by 4000+ students during my time at AICTE IDEALAB, where I focused on improving backend performance, building scalable systems, and ensuring reliability under real usage.
 
               {expanded && (
                 <>
                   <br /><br />
 
-                  As I was growing up, my interest in computers deepened.
-                  Despite facing challenges due to the high cost of internet
-                  access in 2015, I began exploring WiFi security and ethical
-                  hacking.
+                  Most of my work revolves around solving decision-making and information-overload problems.
 
                   <br /><br />
 
-                  Eventually I realized that real skill comes from building
-                  tools. I started programming with C++ and created projects
-                  like a personal assistant called Jarvis.
+                  One of my key projects is CoolGuide, where I built a system to help users decide what electronics to buy based on their needs. The core problem I addressed was decision overload — too many options, not enough clarity. I designed a system that structures product data, ranks options, and delivers relevant recommendations through clean APIs and a user-friendly interface.
 
                   <br /><br />
 
-                  During COVID lockdown I expanded my curiosity into
-                  macroeconomics, geopolitics, history, international relations
-                  and business.
+                  Then there’s CoolCounsel, which focuses on personalized guidance. Here, I built systems that adapt based on user input by transforming preferences into structured decisions through well-defined data flow and logic.
 
                   <br /><br />
 
-                  While I enjoy learning across many disciplines, I continue to
-                  specialize deeply in computer science.
+                  I also built CoolForums, a community-driven platform designed to handle user-generated content at scale, with a focus on backend efficiency, data consistency, and responsiveness.
+
+                  <br /><br />
+
+                  On the ML side, I implemented a KNN-based recommendation system as part of a real-time pipeline, handling data preprocessing, similarity computation, and low-latency API serving.
+
+                  <br /><br />
+
+                  Across these projects, I’ve worked end-to-end with React, Next.js, Node.js, Python, databases, Docker, and Nginx, focusing on building scalable and production-ready systems.
+
+                  <br /><br />
+
+                  I enjoy working on backend-heavy, data-driven systems where performance and intelligent decision-making matter.
+
+                  <br /><br />
+
+                  Looking forward to discussing this further.
                 </>
               )}
 
