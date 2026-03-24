@@ -1,131 +1,122 @@
-import React,{useState} from 'react'
-import Exp_comp from './exp_comp'
-import {useRef,useEffect} from 'react'
+import React, { useState } from "react";
+
+const experiences = [
+  {
+    id: 1,
+    company: "AICTE IDEALab",
+    role: "Full Stack Developer Intern",
+    date: "Sep 2023 – Apr 2024",
+    points: [
+      "Engineered a scalable full-stack platform using Next.js serving 4000+ students, improving usability and streamlining workflows.",
+      "Implemented secure admin workflows with JWT authentication and CSRF protection.",
+      "Built dynamic content modules (image gallery system) to improve engagement and content discoverability.",
+      "Optimized backend APIs using Node.js and MongoDB Atlas for production-level performance.",
+    ],
+    tech: ["Next.js", "Node.js", "MongoDB", "JWT", "Tailwind"],
+  },
+  {
+    id: 2,
+    company: "KLIC Kalchuri Incubation Center",
+    role: "Frontend Developer Intern",
+    date: "Apr 2023 – Sep 2023",
+    points: [
+      "Delivered 5+ production-ready web applications using React, improving UI consistency.",
+      "Implemented fully responsive designs across devices (mobile + desktop).",
+      "Built dashboard-style applications using MERN stack architecture.",
+      "Collaborated with Apeiro Medica team in a startup environment under tight deadlines.",
+    ],
+    tech: ["React", "MERN", "Tailwind", "JavaScript"],
+  },
+  {
+    id: 3,
+    company: "Freelance",
+    role: "Full Stack Developer",
+    date: "May 2022 – Mar 2023",
+    points: [
+      "Developed full-stack applications including dashboards, automation tools, and client websites.",
+      "Designed scalable architectures using React, Node.js, Express, and MongoDB.",
+      "Integrated REST APIs and optimized performance for low-latency experiences.",
+      "Handled complete client lifecycle from requirements to deployment.",
+    ],
+    tech: ["React", "Node.js", "Express", "MongoDB"],
+  },
+];
+
 const Experience = () => {
-   const[experience,setExperience]=useState(1)
+  const [active, setActive] = useState(1);
 
   return (
-    <>
-    <div  id ="experience" className='  font-bold text-[#CCD6F6] text-2xl  ml-3 mt-40 md:text-4xl md:m-12 ms-[4rem]'>
-        <span>
-            02.
-        </span>
-        <span>Where I’ve Worked</span>
-     
-    </div>
-    <div className='flex md: md:m-28 md:relative'>
-      <span className="md:absolute  md:rotate-90	 md: left-[52%] md:bottom-[80%] md:h-[95%] bg-gray-400 md:w-[0.5px]"></span>
-    <span className=" md: absolute  	 md: left-[0.2%] md:top-[2%] md:h-[70%] md:w-[4px] bg-gray-400 "></span>
+    <section id="experience" className="text-[#CCD6F6] mt-32 px-6 md:px-20">
       
-    
+      {/* Heading */}
+      <h2 className="text-3xl md:text-4xl font-bold mb-16">
+        <span className="text-[#64FFDA] mr-2">02.</span>
+        Where I’ve Worked
+      </h2>
 
-       {/* this ul is for bigger screens */}
- <ul className="hidden md:block text-2xl text-[#8892B0]">
-  <li>
-    <button
-      className={`experience-button p-4 w-52 transition-colors duration-200 ${
-        experience === 1 ? "bg-[#112240] text-[#64FFDA]" : "hover:bg-[#112240] text-[#8892B0]"
-      }`}
-      onClick={() => setExperience(1)}
-    >
-      Aicte Idealab
-    </button>
-  </li>
-  <li>
-    <button
-      className={`experience-button p-4 w-52 transition-colors duration-200 ${
-        experience === 2 ? "bg-[#112240] text-[#64FFDA]" : "hover:bg-[#112240] text-[#8892B0]"
-      }`}
-      onClick={() => setExperience(2)}
-    >
-      Dare To Start KLIC
-    </button>
-  </li>
-  <li>
-    <button
-      className={`experience-button p-4 w-52 transition-colors duration-200 ${
-        experience === 3 ? "bg-[#112240] text-[#64FFDA]" : "hover:bg-[#112240] text-[#8892B0]"
-      }`}
-      onClick={() => setExperience(3)}
-    >
-      Freelancing
-    </button>
-  </li>
-</ul>
-
-       {/* big devices ul ends here */}
-
-        <div className=' md:block'>
-          {/* small devices ul starts here */}
-        <ul className='md:hidden  mb-10 text-[#8892B0] ml-7 mt-12    font-semibold  text-xl flex justify-evenly gap-12 '>
-    <li><button  onClick={()=>setExperience(1)}>Aicte Idealab</button></li>
-    <li><button  onClick={()=>setExperience(2)}>KLIC Incubation</button></li>
-    <li><button  onClick={()=>setExperience(3)}>Freelance Developer</button></li>
-      </ul> 
-      {/* small devices ul ends here */}
-          
-    
-           {experience===1 &&
-           <Exp_comp title="Project Developer @ Aicte Idealab
-           " dateto="Sept 2023 - April 2024"
-           first_para="Developed a fully functional, responsive full-stack website using Next.js Tailwind , providing a seamless user
-experience."
-           second_para="Implemented an intuitive and efficient admin panel, with keeping Web Security(CSRF,JWT ) in mind
-,enhancing the website’s management capabilities." 
-           third_para="Utilized version control systems, such as Git, to track and manage project"
-           fourth_para="Used Mongo DB as a backend to store data on Atlas server and used Rest Api to integrate systems"
-           />}
-            {experience===2 && <Exp_comp title=" Frontend Developer @ KLIC KALCHURI INCUBATION CENTER" dateto="April 2023 -Sept 2023"
-           first_para="Implemented a dashboard application using MERN stack"
-         second_para="Developed 5+ frontend websites using HTML/CSS JavaScript,React"
-      third_para=" Implemented responsive web design techniques to ensure compatibility and optimal viewing experience on
-mobile devices"
-      fourth_para="Work closely under Apeiro medica in Dare to start program and Collaborated with cross-functional teams,
-including designers and backend developers,"
-        />}
-      {experience===3 &&
-  <Exp_comp 
-    title="Freelance Developer @ Independent Projects" 
-    dateto="May 2022 - March 2023"
-    first_para="Develop and deliver high-quality web, mobile, and automation projects for clients across various industries, ensuring robust and maintainable code." 
-    second_para="Collaborate with clients to understand project requirements, propose technical solutions, and translate business needs into functional software products."
-    third_para="Work closely with designers and project managers to implement UI/UX designs, integrate APIs, and optimize application performance for seamless user experiences."
-    fourth_para="Provide guidance on best practices, code reviews, and project planning, ensuring timely delivery and high client satisfaction."
-  />
-}
-
+      <div className="flex flex-col md:flex-row gap-10">
         
-          {experience===4&&<Exp_comp title="Software Engineer Co-op @ Starry
-         " dateto="July - December 2016"
-         first_para="Engineered and improved major features of Starry's customer-facing Android web app using ES6, Handlebars, Backbone, Marionette, and CSS"
-            second_para="Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements"
-           third_para="Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders"
-           fourth_para="Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship"
-       />}
-          {experience===5&&<Exp_comp title="Creative Technologist Co-op @ MullenLowe
-" dateto="July - December 2015"
-           first_para="Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery"
-          second_para="Worked alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements"
-          third_para="Collaborated with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders"
-         fourth_para="Provided leadership within engineering department through close collaboration, knowledge shares, and mentorship"
-         />}
-         
-  </div>
-     
-    </div>
+        {/* LEFT SIDE (Tabs) */}
+        <div className="flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l border-gray-600">
+          {experiences.map((exp) => (
+            <button
+              key={exp.id}
+              onClick={() => setActive(exp.id)}
+              className={`px-6 py-3 text-left whitespace-nowrap md:w-60 transition-all duration-300
+                ${
+                  active === exp.id
+                    ? "bg-[#112240] text-[#64FFDA] border-b-2 md:border-b-0 md:border-l-4 border-[#64FFDA]"
+                    : "text-[#8892B0] hover:bg-[#112240]"
+                }`}
+            >
+              {exp.company}
+            </button>
+          ))}
+        </div>
 
-      {/* this ul is only for small devices */}
+        {/* RIGHT SIDE (Content) */}
+        <div className="flex-1">
+          {experiences
+            .filter((exp) => exp.id === active)
+            .map((exp) => (
+              <div key={exp.id} className="space-y-4 animate-fadeIn">
+                
+                <h3 className="text-xl md:text-2xl font-semibold">
+                  {exp.role}{" "}
+                  <span className="text-[#64FFDA]">@ {exp.company}</span>
+                </h3>
 
-    {/* <ul className='md:hidden  text-[#8892B0] ml-7 mt-12  font-semibold  text-xl flex justify-evenly gap-12 '>
-    <li><button  onClick={()=>setExperience(1)}  >StartUp</button></li>
-    <li><button  onClick={()=>setExperience(2)}>Aicte Idealab</button></li>
-    <li><button  onClick={()=>setExperience(3)}>KLIC</button></li>
+                <p className="text-sm text-[#8892B0]">{exp.date}</p>
 
-      </ul> */}
-       {/* small devices ul ends here */}
-    </>
-    
-  )
-}
+                <ul className="mt-4 space-y-3">
+                  {exp.points.map((point, index) => (
+                    <li
+                      key={index}
+                      className="flex items-start gap-2 text-[#8892B0]"
+                    >
+                      <span className="text-[#64FFDA] mt-1">▹</span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
 
-export default Experience
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {exp.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="text-xs bg-[#112240] px-3 py-1 rounded-full text-[#64FFDA]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
