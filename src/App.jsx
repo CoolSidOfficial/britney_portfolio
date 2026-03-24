@@ -37,7 +37,7 @@ useEffect(() => {
 
 
 
-      <Header uname="Siddhant Jain" title="Turning ideas into impact through Software Development" description={["Hi, I’m Siddhant Jain from LNCT Bhopal. My core competencies are full-stack engineering, backend architecture, cloud deployments, and applied machine learning. I work primarily with FastAPI, Node.js/Express, Next.js, React, PostgreSQL/MongoDB, and I focus heavily on secure API design, authentication flows, and system reliability" ] } />
+      <Header uname="Siddhant Jain" title="Turning ideas into impact through Software Development" description={["I’m a full-stack developer from LNCT Bhopal, focused on building scalable systems across backend, cloud, and applied machine learning. I enjoy designing reliable APIs, architecting backend systems, and bringing ideas into production using technologies like FastAPI, Node.js, Next.js, React, and PostgreSQL/MongoDB.My focus is on secure authentication, clean system design, and building software that performs well under real-world usage." ] } />
       </Fade  >
       <Aboutme />
      <Fade delay={250}>
