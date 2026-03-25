@@ -5,7 +5,7 @@ const experiences = [
     id: 1,
     company: "AICTE IDEALab",
     role: "Full Stack Developer Intern",
-    date: "Sep 2023 – Apr 2024",
+    date: "Sep 2023 – April 2024",
     points: [
       "Engineered a scalable full-stack platform using Next.js serving 4000+ students, improving usability and streamlining workflows.",
       "Implemented secure admin workflows with JWT authentication and CSRF protection.",
@@ -18,7 +18,7 @@ const experiences = [
     id: 2,
     company: "KLIC Kalchuri Incubation Center",
     role: "Frontend Developer Intern",
-    date: "Apr 2023 – Sep 2023",
+    date: "Apr 2023 – Oct 2023",
     points: [
       "Delivered 5+ production-ready web applications using React, improving UI consistency.",
       "Implemented fully responsive designs across devices (mobile + desktop).",
