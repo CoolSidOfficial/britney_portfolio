@@ -196,6 +196,41 @@ const allProjects = [
     weblink: "https://github.com/CoolSidOfficial/britney_portfolio",
     category: ["web"]
   },
+  {
+    title: "SysPilot-AI",
+    stack: ["Python", "LangChain", "AI Agents"],
+    desc: "An intelligent AI System Engineer that automates troubleshooting, configuration, and system operations using Python and LangChain.",
+    weblink: "https://github.com/CoolSidOfficial/SysPilot-AI",
+    category: ["ml", "python"]
+  },
+  {
+    title: "CoolRecon",
+    stack: ["Python", "Linux", "Security Tools"],
+    desc: "Automated Attack Surface Discovery Framework for reconnaissance, subdomain enumeration, and target mapping (ethical security research).",
+    weblink: "https://github.com/CoolSidOfficial/CoolRecon",
+    category: ["cyber", "python"]
+  },
+  {
+    title: "custom_web_server",
+    stack: ["Python", "Socket Programming"],
+    desc: "Built a lightweight HTTP web framework from scratch using only Python sockets. Includes routing, middleware, request/response handling, and rate limiting.",
+    weblink: "https://github.com/CoolSidOfficial/custom_web_server",
+    category: ["python", "web"]
+  },
+  {
+    title: "autofill-tool",
+    stack: ["Go", "JSON", "Automation"],
+    desc: "Configurable keyboard automation tool that loads user profiles from JSON and auto-fills forms across applications using global hotkeys.",
+    weblink: "https://github.com/CoolSidOfficial/autofill-tool",
+    category: ["go", "Java/c++", "tool"]
+  },
+  {
+    title: "Resume-Personalization-Engine",
+    stack: ["Python", "LaTeX", "CLI"],
+    desc: "CLI tool that dynamically generates company-specific resumes by tailoring content based on job descriptions using LaTeX automation.",
+    weblink: "https://github.com/CoolSidOfficial/Resume-Personalization-Engine",
+    category: ["python", "tool"]
+  }
 
 ];
 
