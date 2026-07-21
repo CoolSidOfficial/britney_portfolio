@@ -33,11 +33,11 @@ const allProjects = [
   },
 
   {
-    title: "FIQUA",
-    stack: ["HTML", "CSS", "JavaScript"],
-    desc: "Our fish-selling website frontend, built with HTML5, CSS3, and JavaScript. Responsive design techniques make it accessible on all devices and offer a clean UI for product browsing.",
-    weblink: "https://github.com/CoolSidOfficial/fiqua",
-    category: ["web"]
+    title: "custom_web_server",
+    stack: ["Python", "Socket Programming"],
+    desc: "Built a lightweight HTTP web framework from scratch using only Python sockets. Includes routing, middleware, request/response handling, and rate limiting.",
+    weblink: "https://github.com/CoolSidOfficial/custom_web_server",
+    category: ["python", "web"]
   },
 
   {
@@ -210,13 +210,7 @@ const allProjects = [
     weblink: "https://github.com/CoolSidOfficial/CoolRecon",
     category: ["cyber", "python"]
   },
-  {
-    title: "custom_web_server",
-    stack: ["Python", "Socket Programming"],
-    desc: "Built a lightweight HTTP web framework from scratch using only Python sockets. Includes routing, middleware, request/response handling, and rate limiting.",
-    weblink: "https://github.com/CoolSidOfficial/custom_web_server",
-    category: ["python", "web"]
-  },
+ 
   {
     title: "autofill-tool",
     stack: ["Go", "JSON", "Automation"],
@@ -230,7 +224,14 @@ const allProjects = [
     desc: "CLI tool that dynamically generates company-specific resumes by tailoring content based on job descriptions using LaTeX automation.",
     weblink: "https://github.com/CoolSidOfficial/Resume-Personalization-Engine",
     category: ["python", "tool"]
-  }
+  },
+   {
+    title: "FIQUA",
+    stack: ["HTML", "CSS", "JavaScript"],
+    desc: "Our fish-selling website frontend, built with HTML5, CSS3, and JavaScript. Responsive design techniques make it accessible on all devices and offer a clean UI for product browsing.",
+    weblink: "https://github.com/CoolSidOfficial/fiqua",
+    category: ["web"]
+  },
 
 ];
 
