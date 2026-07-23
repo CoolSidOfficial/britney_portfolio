@@ -9,6 +9,7 @@ import { Slide,Fade ,Bounce} from "react-awesome-reveal";
 import New_others from "./components/New_others"
 import { useEffect } from "react";
 import axios from "axios";
+import CertificateJourney from "./components/CertificateJourney"
 
 const App = () => {
 useEffect(() => {
@@ -42,7 +43,7 @@ useEffect(() => {
       </Fade  >
       <Aboutme />
      <Fade delay={250}>
-
+<CertificateJourney/>
       <Experience />
      </Fade>
      <Fade delay={100} cascade damping={1}>
