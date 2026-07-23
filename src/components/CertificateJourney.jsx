@@ -6,8 +6,8 @@ const CertificateJourney = () => {
   const certificates = [
     {
       year: "2017",
-      title: "🚀 Started My Journey",
-      subtitle: "My first step into programming.",
+      title: "Started My Journey in Hacking and Coding at the Age of 13",
+      subtitle: "Became a Certified Ethical Hacker from Linux Solutions",
       image: "/certificates/start.jpg",
       link: "/certificates/start.jpg",
     },
@@ -51,29 +51,89 @@ const CertificateJourney = () => {
       title: "Capstone: Retrieving, Processing, and Visualizing Data with Python",
       subtitle: "University of Michigan",
       image: "/certificates/python5.jpg",
-      link: "#",
+      link: "https://coursera.org/share/519f5f27c0e8103d1a48ce101ce2f1b6",
+    },
+    {
+      year: "2022",
+      title: "Introduction to CSS3",
+      subtitle: "University of Michigan",
+      image: "/certificates/css.jpg",
+      link: "https://coursera.org/share/d3adbf4b45c4cee3b187ca12a0f75047",
+    },
+    {
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },
+    {
+      year: "2022",
+      title: "Innovation and Entrepreneurship",
+      subtitle: "Coding Ninjas",
+      image: "/certificates/codingninjas_innovation.jpg",
+      link: "/certificates/codingninjas_innovation.jpg",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
     },
     {
       year: "2023",
-      title: "Machine Learning",
-      subtitle: "Coursera",
-      image: "/certificates/ml.jpg",
-      link: "#",
+      title: "Advanced Styling with Responsive Design",
+      subtitle: "University of Michigan",
+      image: "/certificates/responsive.jpg",
+      link: "https://coursera.org/share/addfcbf93710f5426acdcb44d951bf5c",
     },
-    {
-      year: "2024",
-      title: "Oracle Database SQL",
-      subtitle: "Oracle",
-      image: "/certificates/oracle.jpg",
-      link: "#",
-    },
-    {
-      year: "2025",
-      title: "Backend Engineering",
-      subtitle: "Docker • Redis • PostgreSQL",
-      image: "/certificates/backend.jpg",
-      link: "#",
-    },
+
+
+
+
+
     {
       year: "2026",
       title: "📚 Still Learning...",
