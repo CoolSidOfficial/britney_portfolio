@@ -53,8 +53,8 @@ useEffect(() => {
       <New_others/>
 
 </Fade>
-<Writing/>
 <Fade triggerOnce delay={100}>
+      <Writing/>
       <Contact/>
 
 </Fade>
