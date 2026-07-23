@@ -8,41 +8,46 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <Fade cascade damping={1} delay={200}>
         <nav className="hidden md:flex items-center justify-end gap-8 px-10 py-5 bg-[#0A192F] text-[#CCD6F6] text-lg sticky top-0 z-50">
+      <Fade cascade damping={1} delay={200}>
           <a
             className="hover:text-[#64FFDA] transition-colors duration-300"
             href="#about"
           >
             01. About
           </a>
-
+             <a
+            className="hover:text-[#64FFDA] transition-colors duration-300"
+            href="#certificatejourney"
+          >
+            02. Certificates
+          </a>
           <a
             className="hover:text-[#64FFDA] transition-colors duration-300"
             href="#experience"
           >
-            02. Experience
+            03. Experience
           </a>
 
           <a
             className="hover:text-[#64FFDA] transition-colors duration-300"
             href="#projects"
           >
-            03. Work
+            04. Work
           </a>
 
           <a
             className="hover:text-[#64FFDA] transition-colors duration-300"
             href="#writing"
           >
-            04. Writing
+            05. Writing
           </a>
 
           <a
             className="hover:text-[#64FFDA] transition-colors duration-300"
             href="#contact"
           >
-            05. Contact
+            06. Contact
           </a>
 
           <a
@@ -51,7 +56,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            06. Admin
+            07. Admin
           </a>
 
           <a
@@ -62,8 +67,8 @@ const Navbar = () => {
           >
             Resume
           </a>
-        </nav>
       </Fade>
+        </nav>
 
       {/* Mobile Menu Button */}
       <button
