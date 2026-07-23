@@ -11,7 +11,7 @@ export const Contact = () => {
     <div id="contact" className="flex text-center flex-col p-5 mt-[200px]">
 
       <div className="text-white text-3xl p-2">
-        <span>04.&nbsp;</span>
+        <span>06.&nbsp;</span>
         <span>What’s Next?</span>
       </div>
 
