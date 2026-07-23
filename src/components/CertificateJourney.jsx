@@ -75,62 +75,47 @@ const CertificateJourney = () => {
       link: "/certificates/codingninjas_innovation.jpg",
     },{
       year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+      title: "Learn to Earn Using C++",
+      subtitle: "Coding Ninjas",
+      image: "/certificates/learn_to_earn.jpg",
+      link: "/certificates/learn_to_earn_fromcPP.jpg",
     },{
       year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
-    },{
-      year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
-    },{
-      year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
-    },{
-      year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
-    },{
-      year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
-    },{
-      year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
-    },{
-      year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
-    },
-    {
-      year: "2023",
       title: "Advanced Styling with Responsive Design",
       subtitle: "University of Michigan",
       image: "/certificates/responsive.jpg",
       link: "https://coursera.org/share/addfcbf93710f5426acdcb44d951bf5c",
+    },{
+      year: "2023",
+      title: "Web Application Technologies and Django",
+      subtitle: "University of Michigan",
+      image: "/certificates/django.jpg",
+      link: "https://coursera.org/share/edd7b3ef9462a21421d3668d39150045",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+    },{
+      year: "2022",
+      title: "Interactivity with JavaScript",
+      subtitle: "University of Michigan",
+      image: "/certificates/js.jpg",
+      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
     },
-
-
 
 
 

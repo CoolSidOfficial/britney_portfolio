@@ -33,7 +33,7 @@ const Navbar = () => {
             className="hover:text-[#64FFDA] transition-colors duration-300"
             href="#projects"
           >
-            04. Work
+            04. Projects
           </a>
 
           <a
