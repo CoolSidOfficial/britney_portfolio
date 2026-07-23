@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar"
 import Header from "./components/Header"
 import Aboutme from "./components/Aboutme"
 import Experience from "./components/Experience"
+import Writing from "./components/Writing"
 import { Contact } from "./components/Contact"
 import Projects from "./components/Projects"
 import { Slide,Fade ,Bounce} from "react-awesome-reveal";
@@ -52,6 +53,7 @@ useEffect(() => {
       <New_others/>
 
 </Fade>
+<Writing/>
 <Fade triggerOnce delay={100}>
       <Contact/>
 
