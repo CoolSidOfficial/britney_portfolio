@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CertificateJourney = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const certificates = [
     {
       year: "2017",
@@ -18,23 +20,58 @@ const CertificateJourney = () => {
     },
     {
       year: "2018",
-      title: "Python Programming",
-      subtitle: "SoloLearn",
-      image: "/certificates/python.jpg",
-      link: "#",
+      title: "Python Data Structures",
+      subtitle: "University of Michigan",
+      image: "/certificates/pythondata.jpg",
+      link: "https://coursera.org/share/0763ca8af363a43cb297a3f4e52d2bd6",
     },
     {
       year: "2019",
-      title: "Java Programming",
-      subtitle: "Oracle Academy",
-      image: "/certificates/java.jpg",
-      link: "#",
+      title: "Using Python to Access Web Data",
+      subtitle: "University of Michigan",
+      image: "/certificates/python_web.jpg",
+      link: "https://coursera.org/share/70297591f2248e0e0c95a818faf276cf",
     },
     {
       year: "2020",
       title: "SQL Fundamentals",
       subtitle: "Oracle",
       image: "/certificates/sql.jpg",
+      link: "#",
+    },
+    {
+      year: "2021",
+      title: "React Development",
+      subtitle: "Meta",
+      image: "/certificates/react.jpg",
+      link: "#",
+    },
+    {
+      year: "2022",
+      title: "Azure Fundamentals",
+      subtitle: "Microsoft",
+      image: "/certificates/azure.jpg",
+      link: "#",
+    },
+    {
+      year: "2023",
+      title: "Machine Learning",
+      subtitle: "Coursera",
+      image: "/certificates/ml.jpg",
+      link: "#",
+    },
+    {
+      year: "2024",
+      title: "Oracle Database SQL",
+      subtitle: "Oracle",
+      image: "/certificates/oracle.jpg",
+      link: "#",
+    },
+    {
+      year: "2025",
+      title: "Backend Engineering",
+      subtitle: "Docker • Redis • PostgreSQL",
+      image: "/certificates/backend.jpg",
       link: "#",
     },
     {
@@ -45,6 +82,10 @@ const CertificateJourney = () => {
       link: "#",
     },
   ];
+
+  const displayedCertificates = showAll
+    ? certificates
+    : certificates.slice(0, 5);
 
   return (
     <section
@@ -63,29 +104,28 @@ const CertificateJourney = () => {
         </span>
 
         <p className="mt-8 text-[#8892B0] text-lg max-w-3xl leading-8">
-          Every certificate tells a story. From writing my first lines of code
-          to exploring databases, cloud computing, machine learning and AI,
-          each milestone reflects my passion for continuous learning.
+          Every certificate represents another milestone in my journey as a
+          software engineer. From my first programming course to cloud
+          computing, databases, machine learning and AI, every step reflects my
+          passion for continuous learning.
         </p>
       </div>
 
       {/* Timeline */}
 
-      <div className="mt-20 flex flex-col items-center">
-
-        {certificates.map((cert, index) => (
+      <div className="mt-20 flex flex-col items-center w-[50%]">
+        {displayedCertificates.map((cert, index) => (
           <React.Fragment key={index}>
-            <div className="text-center">
-
+            <div className="w-full flex flex-col items-center text-center">
               <h2 className="text-4xl font-bold text-[#64FFDA]">
                 {cert.year}
               </h2>
 
-              <h3 className="mt-3 text-3xl font-semibold text-[#CCD6F6]">
+              <h3 className="mt-3 text-3xl font-semibold text-[#CCD6F6] max-w-4xl">
                 {cert.title}
               </h3>
 
-              <p className="mt-2 text-[#8892B0] text-lg">
+              <p className="mt-3 text-[#8892B0] text-lg">
                 {cert.subtitle}
               </p>
 
@@ -93,15 +133,15 @@ const CertificateJourney = () => {
                 <a
                   href={cert.link}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
+                  className="mt-8"
                 >
                   <img
                     src={cert.image}
                     alt={cert.title}
                     className="
-                      mt-8
                       w-full
-                      md:w-[850px]
+                      md:max-w-5xl
                       rounded-xl
                       border
                       border-slate-700
@@ -110,21 +150,52 @@ const CertificateJourney = () => {
                       duration-500
                       hover:scale-[1.02]
                       hover:border-[#64FFDA]
+                      cursor-pointer
                     "
                   />
                 </a>
               )}
             </div>
 
-            {index !== certificates.length - 1 && (
-              <div className="flex flex-col items-center my-12">
-                <div className="w-[2px] h-20 bg-[#64FFDA]/60"></div>
-                <div className="text-[#64FFDA] text-4xl">↓</div>
+            {index !== displayedCertificates.length - 1 && (
+              <div className="flex flex-col items-center my-14">
+                <div className="w-[2px] h-20 bg-[#64FFDA]/40"></div>
+                <div className="text-[#64FFDA] text-4xl animate-bounce">
+                  ↓
+                </div>
               </div>
             )}
           </React.Fragment>
         ))}
       </div>
+
+      {/* Expand / Collapse */}
+
+      {certificates.length > 5 && (
+        <div className="mt-16">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="
+              border
+              border-[#64FFDA]
+              text-[#64FFDA]
+              px-8
+              py-3
+              rounded-md
+              transition-all
+              duration-300
+              hover:bg-[#64FFDA]/10
+              hover:shadow-[6px_6px_0px_rgba(100,255,218,1)]
+              hover:-translate-x-1
+              hover:-translate-y-1
+            "
+          >
+            {showAll
+              ? "↑ Collapse Journey"
+              : "↓ Continue My Journey"}
+          </button>
+        </div>
+      )}
     </section>
   );
 };
