@@ -77,7 +77,7 @@ const CertificateJourney = () => {
       year: "2022",
       title: "Learn to Earn Using C++",
       subtitle: "Coding Ninjas",
-      image: "/certificates/learn_to_earn.jpg",
+      image: "/certificates/learn_to_earn_fromcPP.jpg",
       link: "/certificates/learn_to_earn_fromcPP.jpg",
     },{
       year: "2022",
@@ -91,6 +91,13 @@ const CertificateJourney = () => {
       subtitle: "University of Michigan",
       image: "/certificates/django.jpg",
       link: "https://coursera.org/share/edd7b3ef9462a21421d3668d39150045",
+    },
+    {
+      year: "2023",
+      title: "Perform Foundational Data, ML, and AI Tasks in Google Cloud",
+      subtitle: "Google",
+      image: "/certificates/gcp.jpg",
+      link: "https://www.skills.google/public_profiles/6623c528-761c-46d8-92c5-5882045393d9/badges/5077212",
     },{
       year: "2024",
       title: "Building Web Applications in Django",
@@ -98,23 +105,17 @@ const CertificateJourney = () => {
       image: "/certificates/django_application.jpg",
       link: "https://coursera.org/share/edd7b3ef9462a21421d3668d39150045",
     },{
-      year: "2022",
-      title: "",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+      year: "2025",
+      title: "Introduction to Networks",
+      subtitle: "Cisco",
+      image: "/certificates/introduction_to_networks.jpg",
+      link: "/certificates/introduction_to_networks.jpg",
     },{
-      year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
-    },{
-      year: "2022",
-      title: "Interactivity with JavaScript",
-      subtitle: "University of Michigan",
-      image: "/certificates/js.jpg",
-      link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+      year: "2025",
+      title: "Data Science with Python",
+      subtitle: "Wipro",
+      image: "/certificates/data_science_wipro.jpg",
+      link: "/certificates/data_science_wipro.jpg",
     },
 
 
