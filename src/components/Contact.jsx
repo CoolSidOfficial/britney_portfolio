@@ -1,52 +1,72 @@
-import React from "react";
+import { useState } from "react";
+import { EMAIL, sectionNumber, socials } from "../data/site";
 
-export const Contact = () => {
+const Contact = () => {
+  const [copied, setCopied] = useState(false);
 
-  const copyEmail = () => {
-    navigator.clipboard.writeText("siddhantjainmvm@gmail.com");
-    alert("Email copied to clipboard!");
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Clipboard can be blocked (e.g. non-HTTPS); the mailto link still works.
+    }
   };
 
   return (
-    <div id="contact" className="flex text-center flex-col p-5 mt-[200px]">
+    <>
+      <section id="contact" className="mx-auto max-w-2xl scroll-mt-24 px-6 py-32 text-center">
+        <p className="font-mono text-accent">{sectionNumber("contact")}. What’s Next?</p>
+        <h2 className="mt-4 text-4xl font-bold text-slate-lightest md:text-6xl">Get In Touch</h2>
+        <p className="mt-6 text-lg leading-relaxed text-slate md:text-xl">
+          I’m open to full-time roles and interesting projects. Whether you have an opportunity, a
+          question, or just want to say hi, my inbox is open.
+        </p>
 
-      <div className="text-white text-3xl p-2">
-        <span>06.&nbsp;</span>
-        <span>What’s Next?</span>
-      </div>
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
+          <a
+            href={`mailto:${EMAIL}?subject=Hello`}
+            className="rounded border border-accent px-7 py-4 font-mono text-accent transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_rgba(100,255,218,1)]"
+          >
+            Say hello
+          </a>
+          <button
+            onClick={copyEmail}
+            className="rounded border border-slate-muted px-4 py-4 font-mono text-sm text-slate-lightest transition hover:border-accent hover:text-accent"
+          >
+            {copied ? "Copied ✓" : "Copy email"}
+          </button>
+        </div>
+      </section>
 
-      <span className="font-bold text-[#8892B0] text-5xl p-4">
-        Get In Touch
-      </span>
-
-      <p className="text-2xl text-[#8892B0] p-3">
-        Whether you have a question or just want to say hi!
-      </p>
-
-      <div className="flex items-center justify-center gap-3 mt-10">
-
-        {/* Send Email */}
-        <a
-          href="mailto:siddhantjainmvm@gmail.com?subject=Hello"
-          className="text-white border px-6 py-4 rounded hover:shadow-[7px_9px_0px_rgba(100,255,218,1)] transition"
-        >
-         siddhantjainmvm@gmail.com
-        </a>
-
-        {/* Copy button */}
-        <button
-          onClick={copyEmail}
-          className="text-white border px-3 py-2 rounded text-sm hover:bg-[#64ffda] hover:text-black transition"
-        >
-          Copy
-        </button>
-
-      </div>
-
-      <span className="mt-80 text-3xl text-[#8892B0] p-3 hover:text-white">
-        Designed & Built by Siddhant Jain in React
-      </span>
-
-    </div>
+      <footer className="px-6 pb-8 text-center font-mono text-xs text-slate">
+        {/* Social links for mobile, where the side rails are hidden */}
+        <ul className="mb-6 flex justify-center gap-5 md:hidden">
+          {socials.map((s) => (
+            <li key={s.name}>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" aria-label={s.name} className="block w-6">
+                <img src={s.icon} alt={s.name} />
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p>Built by Siddhant Jain with React &amp; Tailwind.</p>
+        <p className="mt-1">
+          Design inspired by{" "}
+          <a
+            href="https://brittanychiang.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent"
+          >
+            Brittany Chiang
+          </a>
+          .
+        </p>
+      </footer>
+    </>
   );
 };
+
+export default Contact;

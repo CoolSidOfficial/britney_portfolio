@@ -1,9 +1,31 @@
-# React + Vite
+# Siddhant Jain: Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio site, covering my experience, projects, certificates and writing.
 
-Currently, two official plugins are available:
+**Stack:** React 18, Vite, Tailwind CSS, react-awesome-reveal, react-fast-marquee.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# britney_portfolio
+## Run locally
+
+```bash
+npm install
+npm run dev      # start the dev server
+npm run build    # production build in dist/
+npm run lint     # ESLint
+```
+
+## Project structure
+
+```
+src/
+  data/          # all site content: projects, experience, certificates, articles, links
+  components/    # one component per section, plus small shared pieces
+  App.jsx        # page layout
+public/          # images (WebP), icons
+```
+
+To change content, edit the files in `src/data/`; components only handle display.
+To restyle the site, change the colour tokens in `tailwind.config.js`.
+
+## Credits
+
+Design inspired by [Brittany Chiang](https://brittanychiang.com)'s portfolio.

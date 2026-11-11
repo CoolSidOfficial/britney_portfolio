@@ -1,0 +1,120 @@
+// Chronological. The first few are shown by default; the rest appear
+// when the visitor expands the journey.
+export const certificates = [
+  {
+    year: "2017",
+    title: "Started My Journey in Hacking and Coding at the Age of 13",
+    issuer: "Certified Ethical Hacker, Linux Solutions",
+    image: "/certificates/start.webp",
+  },
+  {
+    year: "2018",
+    title: "Programming for Everybody (Getting Started with Python)",
+    issuer: "University of Michigan",
+    image: "/certificates/python1.webp",
+    link: "https://coursera.org/share/00a79367910cee77db8d1c11181a179e",
+  },
+  {
+    year: "2018",
+    title: "Python Data Structures",
+    issuer: "University of Michigan",
+    image: "/certificates/pythondata.webp",
+    link: "https://coursera.org/share/0763ca8af363a43cb297a3f4e52d2bd6",
+  },
+  {
+    year: "2019",
+    title: "Using Python to Access Web Data",
+    issuer: "University of Michigan",
+    image: "/certificates/python_web.webp",
+    link: "https://coursera.org/share/70297591f2248e0e0c95a818faf276cf",
+  },
+  {
+    year: "2021",
+    title: "Using Databases with Python",
+    issuer: "University of Michigan",
+    image: "/certificates/pythondb.webp",
+    link: "https://coursera.org/share/7198c9fa6be5c54b18f2223d0d12c3ba",
+  },
+  {
+    year: "2022",
+    title: "Introduction to HTML5",
+    issuer: "University of Michigan",
+    image: "/certificates/html.webp",
+    link: "https://coursera.org/share/7891c0ba8d3d3658672a4aa491b7b4f1",
+  },
+  {
+    year: "2022",
+    title: "Capstone: Retrieving, Processing, and Visualizing Data with Python",
+    issuer: "University of Michigan",
+    image: "/certificates/python5.webp",
+    link: "https://coursera.org/share/519f5f27c0e8103d1a48ce101ce2f1b6",
+  },
+  {
+    year: "2022",
+    title: "Introduction to CSS3",
+    issuer: "University of Michigan",
+    image: "/certificates/css.webp",
+    link: "https://coursera.org/share/d3adbf4b45c4cee3b187ca12a0f75047",
+  },
+  {
+    year: "2022",
+    title: "Interactivity with JavaScript",
+    issuer: "University of Michigan",
+    image: "/certificates/js.webp",
+    link: "https://coursera.org/share/3cbeadcf17176ad0d70637f0df6832d5",
+  },
+  {
+    year: "2022",
+    title: "Innovation and Entrepreneurship",
+    issuer: "Coding Ninjas",
+    image: "/certificates/codingninjas_innovation.webp",
+  },
+  {
+    year: "2022",
+    title: "Learn to Earn Using C++",
+    issuer: "Coding Ninjas",
+    image: "/certificates/learn_to_earn_fromcPP.webp",
+  },
+  {
+    year: "2022",
+    title: "Advanced Styling with Responsive Design",
+    issuer: "University of Michigan",
+    image: "/certificates/responsive.webp",
+    link: "https://coursera.org/share/addfcbf93710f5426acdcb44d951bf5c",
+  },
+  {
+    year: "2023",
+    title: "Web Application Technologies and Django",
+    issuer: "University of Michigan",
+    image: "/certificates/django.webp",
+    link: "https://coursera.org/share/edd7b3ef9462a21421d3668d39150045",
+  },
+  {
+    year: "2023",
+    title: "Perform Foundational Data, ML, and AI Tasks in Google Cloud",
+    issuer: "Google Cloud",
+    image: "/certificates/gcp.webp",
+    link: "https://www.skills.google/public_profiles/6623c528-761c-46d8-92c5-5882045393d9/badges/5077212",
+  },
+  {
+    year: "2024",
+    title: "Building Web Applications in Django",
+    issuer: "University of Michigan",
+    image: "/certificates/django_application.webp",
+    // TODO: this is the same share link as "Web Application Technologies and Django" above.
+    // Replace with the correct Coursera link for this course.
+    link: "https://coursera.org/share/edd7b3ef9462a21421d3668d39150045",
+  },
+  {
+    year: "2025",
+    title: "Introduction to Networks",
+    issuer: "Cisco",
+    image: "/certificates/introduction_to_networks.webp",
+  },
+  {
+    year: "2025",
+    title: "Data Science with Python",
+    issuer: "Wipro",
+    image: "/certificates/data_science_wipro.webp",
+  },
+];

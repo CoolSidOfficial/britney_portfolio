@@ -1,68 +1,37 @@
-import Navbar from "./components/Navbar"
-import Header from "./components/Header"
-import Aboutme from "./components/Aboutme"
-import Experience from "./components/Experience"
-import Writing from "./components/Writing"
-import { Contact } from "./components/Contact"
-import Projects from "./components/Projects"
-import { Slide,Fade ,Bounce} from "react-awesome-reveal";
-import New_others from "./components/New_others"
-import { useEffect } from "react";
-import axios from "axios";
-import CertificateJourney from "./components/CertificateJourney"
+import { Fade } from "react-awesome-reveal";
+import Navbar from "./components/Navbar";
+import SideRails from "./components/SideRails";
+import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
+import CertificateJourney from "./components/CertificateJourney";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import OtherProjects from "./components/OtherProjects";
+import Writing from "./components/Writing";
+import Contact from "./components/Contact";
 
-const App = () => {
-useEffect(() => {
-    axios.get("https://britneybackend2-production.up.railway.app/api/log_ip")
-      .then(res => console.log("IP logged:", res.data))
-      .catch(err => console.error("Error logging IP:", err));
-  }, []);
+const App = () => (
+  <>
+    <Navbar />
+    <SideRails />
 
-   return (
-    <>
-      <Navbar />
+    <main className="mx-auto max-w-7xl">
+      <Header />
+      <AboutMe />
       <Fade triggerOnce delay={100}>
-      <ul className="w-12  fixed bottom-[220px] bg-blend-normal z-30 hidden md:block  ">
-        <li className="p-2 "><a href="https://github.com/CoolSidOfficial" target="_blank"><img src="github-mark-white.svg" alt="Github"/></a></li>
-        <li className="p-2"><a href="https://www.linkedin.com/in/siddhant-jain-coolsidofficial/" target="_blank"><img src="linkedin-white.png" alt="LinkedIn"/></a></li>
-        <li className="p-1  w-18"><a href="https://leetcode.com/u/Sid_Jain_2003/" target="_blank"><img src="leetcode.png" alt="LeetCode"/></a></li>
-        <li className="p-2"><a href="https://www.instagram.com/coolsid_30/"><img src="instagram.png"   target="_blank" alt="Instagram"/></a></li>
-        <li className="p-2"><a href="https://twitter.com/officialcoolsid/" target="_blank"><img src="x.png" alt="X"/></a></li>
-        <li className="p-2"><a href="https://medium.com/@coolsj" target="_blank"><img src="medium.png" alt="medium"/></a></li>
-
-      </ul> 
-      <span className="md:fixed md:bottom-[1%] md:left-[25px] md:h-[20%] bg-gray-400 md:w-1"></span>
-      {/* // right */}
-      
-      <a className=" hidden md:block fixed md:fixed bottom-[40vh] md:right-[11vh]  translate-x-[50%] rotate-90 text-lg text-[#8892B0] font-bold z-100" href="mailto:siddhantjainmvm@gmail.com">siddhantjainmvm@gmail.com&nbsp;&nbsp;</a> 
-      <span className="  md:fixed  md:bottom-[1vh] md:right-[11vh] md:h-[20%] bg-gray-400 md:w-1"></span>
-
-
-
-      <Header uname="Siddhant Jain" title="Turning ideas into impact through Software Development" description={["I’m a full-stack developer from LNCT Bhopal, focused on building scalable systems across backend, cloud, and applied machine learning. I enjoy designing reliable APIs, architecting backend systems, and bringing ideas into production using technologies like FastAPI, Node.js, Next.js, React, and PostgreSQL/MongoDB.My focus is on secure authentication, clean system design, and building software that performs well under real-world usage." ] } />
-      </Fade  >
-      <Aboutme />
-     <Fade delay={250}>
-<CertificateJourney/>
-      <Experience />
-     </Fade>
-     <Fade delay={100} cascade damping={1}>
-      <Projects/>
+        <CertificateJourney />
+        <Experience />
       </Fade>
-<Fade triggerOnce cascade  delay={100}>
-      {/* <Other_Proj/> */}
-      <New_others/>
+      <Fade triggerOnce delay={100}>
+        <Projects />
+        <OtherProjects />
+      </Fade>
+      <Fade triggerOnce delay={100}>
+        <Writing />
+        <Contact />
+      </Fade>
+    </main>
+  </>
+);
 
-</Fade>
-<Fade triggerOnce delay={100}>
-      <Writing/>
-      <Contact/>
-
-</Fade>
-    </> 
-  )
-
-}
-
-
-export default App
+export default App;

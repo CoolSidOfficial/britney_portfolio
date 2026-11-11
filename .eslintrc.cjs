@@ -16,5 +16,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // Plain-JS project: props are documented via the data files in src/data.
+    'react/prop-types': 'off',
   },
 }

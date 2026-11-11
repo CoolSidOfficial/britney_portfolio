@@ -1,0 +1,67 @@
+export const experiences = [
+  {
+    id: "wyreflow",
+    company: "Wyreflow Technologies",
+    role: "Software Development Engineer Intern",
+    date: "Aug 2026 – Present",
+    points: [
+      "Develop and maintain production features for Hireshala, a jobs and internships platform, using React, Next.js, Node.js, REST APIs, and MongoDB.",
+      "Engineered authentication workflows using JWT access tokens, refresh tokens, HTTP-only cookies, and Axios interceptors, handling token expiration and automatic session renewal.",
+      "Implement and debug authentication, authorization, API error handling, and session management across frontend and backend services.",
+      "Optimized production API and frontend behavior by investigating duplicate requests, authentication failures, stale sessions, and routing issues.",
+      "Work with Git-based workflows, code reviews, CI/CD, production deployments, and SonarCloud quality gates.",
+    ],
+    tech: ["React", "Next.js", "Node.js", "MongoDB", "JWT"],
+  },
+  {
+    id: "founding",
+    company: "CoolGuide & CoolForums",
+    role: "Founding Engineer",
+    date: "May 2025 – Jul 2026",
+    points: [
+      "Architected and shipped CoolGuide, a personalized electronics recommendation platform with 200+ curated products, using a KNN-based recommendation engine with cosine similarity across product metadata and user preferences.",
+      "Built CoolForums, a real-time discussion platform using Node.js, PostgreSQL, and Socket.IO, supporting authentication, posts, comments, live chat, and product-specific discussions.",
+      "Designed and deployed production backend services using Node.js, FastAPI, PostgreSQL, MongoDB, Docker, and Nginx.",
+      "Owned end-to-end engineering across system architecture, backend development, authentication, database design, deployment, and infrastructure.",
+    ],
+    tech: ["Node.js", "FastAPI", "PostgreSQL", "MongoDB", "Socket.IO", "Docker", "Nginx"],
+  },
+  {
+    id: "aicte",
+    company: "AICTE IDEALab",
+    role: "Full Stack Developer Intern",
+    date: "Oct 2023 – Apr 2024",
+    points: [
+      "Engineered a full-stack platform using Next.js serving 4,000+ students, supporting scalable application workflows and data-driven content.",
+      "Implemented secure administrative workflows using JWT authentication and CSRF protection, securing sensitive operations against unauthorized access.",
+      "Built dynamic content modules and backend-driven workflows that improved content discoverability and platform usability.",
+    ],
+    tech: ["Next.js", "Node.js", "MongoDB", "JWT"],
+  },
+  {
+    id: "klic",
+    company: "KLIC Kalchuri Incubation Center",
+    role: "Frontend Developer Intern",
+    date: "Apr 2023 – Oct 2023",
+    points: [
+      "Delivered 5+ production-ready web applications using React, improving UI consistency.",
+      "Implemented fully responsive designs across devices (mobile + desktop).",
+      "Built dashboard-style applications using MERN stack architecture.",
+      "Collaborated with the Apeiro Medica team in a startup environment under tight deadlines.",
+    ],
+    tech: ["React", "MERN", "Tailwind", "JavaScript"],
+  },
+  {
+    id: "freelance",
+    company: "Freelance",
+    role: "Full Stack Developer",
+    date: "May 2022 – Mar 2023",
+    points: [
+      "Developed full-stack applications including dashboards, automation tools, and client websites.",
+      "Designed scalable architectures using React, Node.js, Express, and MongoDB.",
+      "Integrated REST APIs and optimized performance for low-latency experiences.",
+      "Handled the complete client lifecycle from requirements to deployment.",
+    ],
+    tech: ["React", "Node.js", "Express", "MongoDB"],
+  },
+];

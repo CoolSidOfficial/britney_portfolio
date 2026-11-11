@@ -1,140 +1,64 @@
+import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import Resume from "../assets/resume.pdf";
-import React, { useState } from "react";
+import { sections } from "../data/site";
 
 const Navbar = () => {
-  const [show_nav, update_nav] = useState(false);
+  const [open, setOpen] = useState(false);
+  const close = () => setOpen(false);
 
   return (
     <>
-      {/* Desktop Navbar */}
-        <nav className="hidden md:flex items-center justify-end gap-8 px-10 py-5 bg-[#0A192F] text-[#CCD6F6] text-lg sticky top-0 z-50">
-      <Fade cascade damping={1} delay={200}>
-          <a
-            className="hover:text-[#64FFDA] transition-colors duration-300"
-            href="#about"
-          >
-            01. About
-          </a>
-             <a
-            className="hover:text-[#64FFDA] transition-colors duration-300"
-            href="#certificatejourney"
-          >
-            02. Certificates
-          </a>
-          <a
-            className="hover:text-[#64FFDA] transition-colors duration-300"
-            href="#experience"
-          >
-            03. Experience
-          </a>
-
-          <a
-            className="hover:text-[#64FFDA] transition-colors duration-300"
-            href="#projects"
-          >
-            04. Projects
-          </a>
-
-          <a
-            className="hover:text-[#64FFDA] transition-colors duration-300"
-            href="#writing"
-          >
-            05. Writing
-          </a>
-
-          <a
-            className="hover:text-[#64FFDA] transition-colors duration-300"
-            href="#contact"
-          >
-            06. Contact
-          </a>
-
-          <a
-            className="hover:text-[#64FFDA] transition-colors duration-300"
-            href="https://britneybackend2-production.up.railway.app/admin/login/?next=/admin/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            07. Admin
-          </a>
-
+      {/* Desktop */}
+      <nav className="hidden md:flex sticky top-0 z-50 items-center justify-end gap-8 bg-navy/90 px-10 py-5 text-slate-lightest backdrop-blur">
+        <Fade cascade damping={0.1} triggerOnce>
+          {sections.map((s) => (
+            <a key={s.id} href={`#${s.id}`} className="transition-colors hover:text-accent">
+              <span className="font-mono text-accent">{s.number}.</span> {s.label}
+            </a>
+          ))}
           <a
             href={Resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-[#64FFDA] text-[#64FFDA] rounded px-5 py-3 hover:bg-[#64FFDA]/10 transition-all duration-300 hover:shadow-[5px_5px_0px_rgba(100,255,218,1)]"
+            className="rounded border border-accent px-5 py-3 text-accent transition-all hover:bg-accent/10 hover:shadow-[5px_5px_0px_rgba(100,255,218,1)]"
           >
             Resume
           </a>
-      </Fade>
-        </nav>
+        </Fade>
+      </nav>
 
-      {/* Mobile Menu Button */}
+      {/* Mobile toggle */}
       <button
-        onClick={() => update_nav(!show_nav)}
-        className="md:hidden fixed top-4 right-4 z-50"
+        onClick={() => setOpen(!open)}
+        aria-label={open ? "Close menu" : "Open menu"}
+        aria-expanded={open}
+        className="fixed right-4 top-4 z-50 md:hidden"
       >
-        <img
-          className="w-10"
-          src="/menu_icon.png"
-          alt="Menu"
-        />
+        <img className="w-10" src="/menu_icon.png" alt="" />
       </button>
 
-      {/* Mobile Sidebar */}
-      {show_nav && (
-        <nav className="fixed top-0 right-0 h-screen w-[80%] bg-[#112240] text-[#CCD6F6] flex flex-col items-center justify-center gap-8 text-2xl font-mono font-semibold z-40 shadow-2xl">
-
-          <a
-            onClick={() => update_nav(false)}
-            className="hover:text-[#64FFDA]"
-            href="#about"
-          >
-            About
-          </a>
-
-          <a
-            onClick={() => update_nav(false)}
-            className="hover:text-[#64FFDA]"
-            href="#experience"
-          >
-            Experience
-          </a>
-
-          <a
-            onClick={() => update_nav(false)}
-            className="hover:text-[#64FFDA]"
-            href="#projects"
-          >
-            Work
-          </a>
-
-          <a
-            onClick={() => update_nav(false)}
-            className="hover:text-[#64FFDA]"
-            href="#writing"
-          >
-            Writing
-          </a>
-
-          <a
-            onClick={() => update_nav(false)}
-            className="hover:text-[#64FFDA]"
-            href="#contact"
-          >
-            Contact
-          </a>
-
-          <a
-            href={Resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-[#64FFDA] text-[#64FFDA] rounded px-6 py-3 hover:bg-[#64FFDA]/10 transition-all duration-300"
-          >
-            Resume
-          </a>
-        </nav>
+      {/* Mobile drawer */}
+      {open && (
+        <>
+          <div className="fixed inset-0 z-30 bg-navy/60 backdrop-blur-sm md:hidden" onClick={close} />
+          <nav className="fixed right-0 top-0 z-40 flex h-screen w-[80%] flex-col items-center justify-center gap-8 bg-navy-light text-xl text-slate-lightest shadow-2xl md:hidden">
+            {sections.map((s) => (
+              <a key={s.id} href={`#${s.id}`} onClick={close} className="text-center hover:text-accent">
+                <span className="block font-mono text-sm text-accent">{s.number}.</span>
+                {s.label}
+              </a>
+            ))}
+            <a
+              href={Resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded border border-accent px-6 py-3 text-accent transition-all hover:bg-accent/10"
+            >
+              Resume
+            </a>
+          </nav>
+        </>
       )}
     </>
   );
