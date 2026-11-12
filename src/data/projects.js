@@ -1,35 +1,32 @@
 export const featuredProjects = [
   {
+    title: "SysPilot-AI",
+    desc: "An AI system-engineering agent that automates troubleshooting, configuration, and routine system operations using Python and LangChain.",
+    tags: ["Python", "LangChain", "AI Agents"],
+    github: "https://github.com/CoolSidOfficial/SysPilot-AI",
+    image: "/project_images/syspilot-ai.svg",
+  },
+  {
+    title: "CoolRecon",
+    desc: "Automated attack-surface discovery framework for reconnaissance, subdomain enumeration, and target mapping in authorized security assessments.",
+    tags: ["Python", "Linux", "Security Tools"],
+    github: "https://github.com/CoolSidOfficial/CoolRecon",
+    image: "/project_images/coolrecon.svg",
+  },
+  {
+    title: "Resume Personalization Engine",
+    desc: "CLI tool that generates company-specific resumes by tailoring content to a job description and rendering it with LaTeX.",
+    tags: ["Python", "LaTeX", "CLI"],
+    github: "https://github.com/CoolSidOfficial/Resume-Personalization-Engine",
+    image: "/project_images/resume-engine.svg",
+  },
+  {
     title: "CoolGuide",
     desc: "CoolGuide helps you find the right electronics for your needs. It features a recommendation engine, product search, and real-time chat between users.",
     tags: ["Next.js", "FastAPI", "Tailwind", "MongoDB", "Socket.io"],
     github: "https://github.com/CoolSidOfficial/CoolGuide",
     live: "https://coolguide.live",
     image: "/project_images/coolguide.webp",
-  },
-  {
-    title: "CoolCounsel",
-    desc: "MP DTE college predictor that analyzes previous admission data and recommends suitable engineering colleges and branches for students.",
-    tags: ["React", "Node.js", "MongoDB", "Tailwind"],
-    github: "https://github.com/CoolSidOfficial/mp-dte-Counsel",
-    live: "https://coolcounsel.netlify.app",
-    image: "/project_images/coolcounsel.webp",
-  },
-  {
-    title: "CoolForums",
-    desc: "A scalable discussion platform supporting topic-based threads, nested replies and real-time updates using WebSockets and Redis pub/sub.",
-    tags: ["Next.js", "PostgreSQL", "WebSockets", "Docker"],
-    github: "https://github.com/CoolSidOfficial/FORUMS",
-    live: "https://forums-self.vercel.app/tabs/categories",
-    image: "/project_images/coolforums.webp",
-  },
-  {
-    title: "KNNFitSense",
-    desc: "Fitness level prediction platform using a K-Nearest Neighbors machine learning model with real-time predictions through a React + Flask stack.",
-    tags: ["React", "Flask", "Scikit-learn", "Tailwind"],
-    github: "https://github.com/CoolSidOfficial/KNNFitSense",
-    live: "https://ml-fitness-sense.vercel.app/",
-    image: "/project_images/knnfitsense.webp",
   },
 ];
 
@@ -72,6 +69,20 @@ export const otherProjects = [
     desc: "CLI tool that generates company-specific resumes by tailoring content to a job description and rendering it with LaTeX.",
     link: "https://github.com/CoolSidOfficial/Resume-Personalization-Engine",
     category: ["python"],
+  },
+  {
+    title: "CoolCounsel",
+    stack: ["React", "Node.js", "MongoDB", "Tailwind"],
+    desc: "MP DTE college predictor that analyzes previous admission data and recommends suitable engineering colleges and branches for students.",
+    link: "https://github.com/CoolSidOfficial/mp-dte-Counsel",
+    category: ["web"],
+  },
+  {
+    title: "CoolForums",
+    stack: ["Next.js", "PostgreSQL", "WebSockets", "Docker"],
+    desc: "A scalable discussion platform supporting topic-based threads, nested replies and real-time updates using WebSockets and Redis pub/sub.",
+    link: "https://github.com/CoolSidOfficial/FORUMS",
+    category: ["web"],
   },
   {
     title: "Legal Gyaan",

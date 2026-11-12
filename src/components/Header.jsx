@@ -11,8 +11,7 @@ const Header = () => (
       </p>
       <p className="mt-8 max-w-2xl text-lg leading-relaxed text-slate md:text-xl">
         I’m a backend software engineer building scalable APIs, systems, and real-time services.
-        Currently a Software Development Engineer Intern at Wyreflow Technologies, working on
-        Hireshala with Node.js, Next.js, and MongoDB.
+        Currently a Junior Full Stack Engineer at Inboxkit.
       </p>
       <div className="mt-12 flex flex-wrap gap-4">
         <a

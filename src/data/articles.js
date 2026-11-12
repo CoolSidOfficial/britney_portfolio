@@ -1,5 +1,11 @@
 export const articles = [
   {
+    title: "Why America’s Founding Fathers Were Political Geniuses",
+    desc: "The U.S. Constitution has endured because its authors assumed power would eventually be abused. This article explores how divided authority, independent courts, and a demanding amendment process made it last where constitutions built on good intentions failed.",
+    date: "July 24, 2026",
+    link: "https://medium.com/@coolsj/why-americas-founding-fathers-were-political-geniuses-fcb84c125bbc",
+  },
+  {
     title: "The Great Miscalculation: Why America Isn’t Falling",
     desc: "For years, commentators have predicted the decline of American power. This article explores why those predictions repeatedly overlook the structural advantages that continue to sustain America's position as the world's leading superpower.",
     date: "June 24, 2026",

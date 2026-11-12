@@ -16,10 +16,13 @@ const AboutMe = () => (
           services. I recently finished my B.Tech in Computer Science at LNCT Bhopal.
         </p>
         <p>
-          Right now I’m a Software Development Engineer Intern at{" "}
-          <Highlight>Wyreflow Technologies</Highlight>, shipping production features for Hireshala,
-          a jobs and internships platform. Most of my work there is authentication and session
-          handling: JWT access and refresh tokens, HTTP-only cookies, and automatic session renewal.
+          Right now I’m a Junior Full Stack Engineer at <Highlight>Inboxkit</Highlight>. Before
+          that I interned as a software engineer at <Highlight>Wyreflow Technologies</Highlight>,
+          shipping production features for Hireshala, a jobs and internships platform, with a focus
+          on authentication and session handling: JWT access and refresh tokens, HTTP-only cookies,
+          and automatic session renewal. I’ve also done bug bounty work on{" "}
+          <Highlight>HackerOne</Highlight>, reporting vulnerabilities to companies like Visa,
+          Instacart, and MercadoLibre.
         </p>
         <p>
           Before that I was the founding engineer behind <Highlight>CoolGuide</Highlight>, a
